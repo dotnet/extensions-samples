@@ -1,0 +1,133 @@
+# Setting batch to true, triggers one build at a time.
+# if there is a push while a build in progress, it will wait,
+# until the running build finishes, and produce a build with all the changes
+# that happened during the last build.
+trigger:
+  batch: true
+  branches:
+    include:
+    - release/*
+    - main
+  paths:
+    include:
+    - '*'
+    exclude:
+    - eng/Version.Details.xml
+    - .github/*
+    - docs/*
+    - CODE-OF-CONDUCT.md
+    - LICENSE.TXT
+    - PATENTS.TXT
+    - README.md
+    - SECURITY.md
+    - THIRD-PARTY-NOTICES.TXT
+
+pr:
+  branches:
+    include:
+    - release/*
+    - main
+  paths:
+    include:
+    - '*'
+    exclude:
+    - eng/Version.Details.xml
+    - .github/*
+    - docs/*
+    - CODE-OF-CONDUCT.md
+    - LICENSE.TXT
+    - PATENTS.TXT
+    - README.md
+    - SECURITY.md
+    - THIRD-PARTY-NOTICES.TXT
+
+variables:
+  - name: _TeamName
+    value: dotnet-r9
+  - name: NativeToolsOnMachine
+    value: true
+  - name: _BuildConfig
+    value: Release
+  - name: DOTNET_SKIP_FIRST_TIME_EXPERIENCE
+    value: true
+  # TODO: Replace with eq(variables['System.TeamProject'], 'public') once a public project is created
+  #       Treat builds from refs/heads/internal/* branches as the mirror builds, i.e., official; and
+  #       treat all other builds as "public".
+  - name: runAsPublic
+    value: true # ${{ and(ne(variables['Build.SourceBranch'], 'refs/heads/main'), not(startsWith(variables['Build.SourceBranch'], 'refs/heads/internal/'))) }}
+
+stages:
+- stage: build
+  displayName: Build
+  variables:
+  - template: /eng/common/templates/variables/pool-providers.yml
+  jobs:
+  - template: /eng/common/templates/jobs/jobs.yml
+    parameters:
+      enableMicrobuild: true
+      enableTelemetry: true
+      enableSourceIndex: false
+      runAsPublic: ${{ variables['runAsPublic'] }}
+      # Publish build logs
+      enablePublishBuildArtifacts: true
+      # Publish test logs
+      enablePublishTestResults: true
+      # Publish NuGet packages using v3
+      # https://github.com/dotnet/arcade/blob/main/Documentation/CorePackages/Publishing.md#basic-onboarding-scenario-for-new-repositories-to-the-current-publishing-version-v3
+      enablePublishUsingPipelines: true
+      enablePublishBuildAssets: true
+      workspace:
+        clean: all
+
+      jobs:
+      - job: Windows
+        timeoutInMinutes: 180
+
+        pool:
+          ${{ if eq(variables['runAsPublic'], 'true') }}:
+            name: $(DncEngInternalBuildPool)
+            demands: ImageOverride -equals windows.vs2022preview.amd64
+          # Non-public (i.e., official builds)
+          ${{ else }}:
+            name: $(DncEngInternalBuildPool)
+            demands: ImageOverride -equals windows.vs2022preview.amd64
+
+        preSteps:
+          - checkout: self
+            clean: true
+            persistCredentials: true
+            timeoutInMinutes: 3
+            fetchDepth: 1
+
+        steps:
+          # Debug
+          - pwsh: |
+                Get-ChildItem env:* | Sort-Object Name  
+            displayName: Debug
+
+
+# Publish and validation steps. Only run in official builds
+- ${{ if and(ne(variables['runAsPublic'], 'true'), notin(variables['Build.Reason'], 'PullRequest')) }}:
+  - template: /eng/common/templates/post-build/post-build.yml
+    parameters:
+      validateDependsOn:
+        - build
+      publishingInfraVersion: 3
+      enableSymbolValidation: false
+      enableSigningValidation: false
+      enableNugetValidation: false
+      enableSourceLinkValidation: false
+      # these param values come from the DotNet-Winforms-SDLValidation-Params azdo variable group
+      SDLValidationParameters:
+        enable: false
+        params: ' -SourceToolsList $(_TsaSourceToolsList)
+          -TsaInstanceURL $(_TsaInstanceURL)
+          -TsaProjectName $(_TsaProjectName)
+          -TsaNotificationEmail $(_TsaNotificationEmail)
+          -TsaCodebaseAdmin $(_TsaCodebaseAdmin)
+          -TsaBugAreaPath $(_TsaBugAreaPath)
+          -TsaIterationPath $(_TsaIterationPath)
+          -TsaRepositoryName $(_TsaRepositoryName)
+          -TsaCodebaseName $(_TsaCodebaseName)
+          -TsaOnboard $(_TsaOnboard)
+          -TsaPublish $(_TsaPublish)'
