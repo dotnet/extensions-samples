@@ -24,6 +24,11 @@
 
   -->
   <PropertyGroup Label="Automated">
+    <!-- dotnet/r9 -->
+    <MicrosoftR9ExtensionsLoggingAbstractionsVersion>8.0.0-alpha.1.23166.6</MicrosoftR9ExtensionsLoggingAbstractionsVersion>
+    <MicrosoftR9ExtensionsLoggingFakesVersion>8.0.0-alpha.1.23166.6</MicrosoftR9ExtensionsLoggingFakesVersion>
+    <MicrosoftR9ExtensionsRedactionFakesVersion>8.0.0-alpha.1.23166.6</MicrosoftR9ExtensionsRedactionFakesVersion>
+    <MicrosoftR9ExtensionsTimeFakesVersion>8.0.0-alpha.1.23166.6</MicrosoftR9ExtensionsTimeFakesVersion>
   </PropertyGroup>
   <!--
 

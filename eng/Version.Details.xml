@@ -1,5 +1,21 @@
 <Dependencies>
   <ProductDependencies>
+    <Dependency Name="Microsoft.R9.Extensions.Logging.Abstractions" Version="8.0.0-alpha.1.23166.6">
+      <Uri>https://github.com/dotnet/r9</Uri>
+      <Sha />
+    </Dependency>
+    <Dependency Name="Microsoft.R9.Extensions.Logging.Fakes" Version="8.0.0-alpha.1.23166.6">
+      <Uri>https://github.com/dotnet/r9</Uri>
+      <Sha />
+    </Dependency>
+    <Dependency Name="Microsoft.R9.Extensions.Redaction.Fakes" Version="8.0.0-alpha.1.23166.6">
+      <Uri>https://github.com/dotnet/r9</Uri>
+      <Sha />
+    </Dependency>
+    <Dependency Name="Microsoft.R9.Extensions.Time.Fakes" Version="8.0.0-alpha.1.23166.6">
+      <Uri>https://github.com/dotnet/r9</Uri>
+      <Sha />
+    </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
     <Dependency Name="Microsoft.DotNet.Arcade.Sdk" Version="8.0.0-beta.23166.4">
