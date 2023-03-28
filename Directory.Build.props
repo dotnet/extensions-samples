@@ -1,0 +1,44 @@
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.DotNet.Arcade.Sdk" />
+
+  <PropertyGroup>
+    <!-- The latest TFM we're targeting overall -->
+    <LatestTargetFramework>net$(MajorVersion).$(MinorVersion)</LatestTargetFramework>
+    <!-- All the .NET TFMs we're building -->
+    <SupportedNetCoreTargetFrameworks>$(LatestTargetFramework);net7.0;net6.0</SupportedNetCoreTargetFrameworks>
+    <NetCoreTargetFrameworks>$(SupportedNetCoreTargetFrameworks);netcoreapp3.1</NetCoreTargetFrameworks>
+
+    <TargetFrameworks>$(NetCoreTargetFrameworks);net472;net461</TargetFrameworks>
+
+    <!--
+      Execute tests only for the latest TFM.
+      See https://github.com/dotnet/arcade/blob/main/Documentation/ArcadeSdk.md#testtargetframeworks-list-of-strings.
+     -->
+    <TestTargetFrameworks>$(LatestTargetFramework)</TestTargetFrameworks>
+
+    <LangVersion>preview</LangVersion>
+    <Nullable>enable</Nullable>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <DebugType>portable</DebugType>
+    <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
+    <EnableXlfLocalization>false</EnableXlfLocalization>
+    <UpdateXlfOnBuild>false</UpdateXlfOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Product>Microsoft&#xAE; R9 SDK Samples</Product>
+    <Copyright>$(CopyrightNetFoundation)</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>R9;Azure;Cloud</PackageTags>
+    <RepositoryUrl>https://github.com/dotnet/r9-samples</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);NETSDK1138;MSB3270</MSBuildWarningsAsMessages>
+    <WarningLevel>5</WarningLevel>
+    <TreatWarningsAsErrors Condition=" '$(TreatWarningsAsErrors)' == '' ">true</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);S109;AD0001;CA1014;R9A029;IDE0161</NoWarn>
+  </PropertyGroup>
+
+</Project>

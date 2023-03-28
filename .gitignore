@@ -297,7 +297,6 @@ git-diff.txt
 mutation-report.json
 mutation-report.html
 
-*.sln
 *.metaproj
 **/launchSettings.json
 

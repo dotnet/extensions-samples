@@ -23,7 +23,7 @@ if not exist "%DOTNET_ROOT%\dotnet.exe" (
 :: Prefer the VS in the developer command prompt if we're in one, followed by whatever shows up in the current search path.
 set "DEVENV=%DevEnvDir%devenv.exe"
 
-set SLN=SDK.sln
+set SLN=Samples.sln
 
 if exist "%DEVENV%" (
     :: Fully qualified works
