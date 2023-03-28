@@ -1,0 +1,25 @@
+parameters:
+  - name: buildScript
+    type: string
+  - name: buildConfig
+    type: string
+  - name: repoLogPath
+    type: string
+
+steps:
+  # Debug
+  # - pwsh: |
+  #       Write-Host 'buildScript: ${{ parameters.buildScript }}'
+  #       Write-Host 'buildConfig: ${{ parameters.buildConfig }}'
+  #       Write-Host 'repoLogPath: ${{ parameters.repoLogPath }}'
+  #       Get-ChildItem env:* | Sort-Object Name  
+  #   displayName: Debug
+
+  - ${{ if ne(variables['System.TeamProject'], 'public') }}:
+    - task: NuGetAuthenticate@1
+
+  - script: ${{ parameters.buildScript }}
+            -restore -build -test
+            -configuration ${{ parameters.buildConfig }}
+            /bl:${{ parameters.repoLogPath }}/build.binlog
+    displayName: Build and test

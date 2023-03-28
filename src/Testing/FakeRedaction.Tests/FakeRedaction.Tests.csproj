@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to use fake redaction types in unit tests.</Description>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.R9.Extensions.Redaction.Fakes" Version="$(MicrosoftR9ExtensionsRedactionFakesVersion)" />
+    <PackageReference Include="Microsoft.R9.Extensions.Time.Fakes" Version="$(MicrosoftR9ExtensionsTimeFakesVersion)" />
+    <PackageReference Include="Microsoft.R9.Extensions.Logging.Fakes" Version="$(MicrosoftR9ExtensionsLoggingFakesVersion)" />
+    <PackageReference Include="Microsoft.R9.Extensions.Logging.Abstractions" Version="$(MicrosoftR9ExtensionsLoggingAbstractionsVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+  </ItemGroup>
+
+</Project>

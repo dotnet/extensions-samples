@@ -55,6 +55,14 @@ variables:
   #       treat all other builds as "public".
   - name: runAsPublic
     value: true # ${{ and(ne(variables['Build.SourceBranch'], 'refs/heads/main'), not(startsWith(variables['Build.SourceBranch'], 'refs/heads/internal/'))) }}
+  - name: _BuildConfig
+    value: Release
+  - name: Build.Arcade.ArtifactsPath
+    value: $(Build.SourcesDirectory)/artifacts/
+  - name: Build.Arcade.LogsPath
+    value: $(Build.Arcade.ArtifactsPath)log/$(_BuildConfig)/
+  - name: Build.Arcade.TestResultsPath
+    value: $(Build.Arcade.ArtifactsPath)TestResults/$(_BuildConfig)/
 
 stages:
 - stage: build
@@ -74,8 +82,8 @@ stages:
       enablePublishTestResults: true
       # Publish NuGet packages using v3
       # https://github.com/dotnet/arcade/blob/main/Documentation/CorePackages/Publishing.md#basic-onboarding-scenario-for-new-repositories-to-the-current-publishing-version-v3
-      enablePublishUsingPipelines: true
-      enablePublishBuildAssets: true
+      enablePublishUsingPipelines: false
+      enablePublishBuildAssets: false
       workspace:
         clean: all
 
@@ -92,6 +100,9 @@ stages:
             name: $(DncEngInternalBuildPool)
             demands: ImageOverride -equals windows.vs2022preview.amd64
 
+        variables:
+          - _buildScript: $(Build.SourcesDirectory)/build.cmd -ci
+
         preSteps:
           - checkout: self
             clean: true
@@ -100,10 +111,40 @@ stages:
             fetchDepth: 1
 
         steps:
-          # Debug
-          - pwsh: |
-                Get-ChildItem env:* | Sort-Object Name  
-            displayName: Debug
+          - template: \eng\pipelines\templates\BuildAndTest.yml
+            parameters:
+              buildScript: $(_buildScript)
+              buildConfig: $(_BuildConfig)
+              repoLogPath: $(Build.Arcade.LogsPath)
+
+      - job: Ubuntu
+        timeoutInMinutes: 180
+
+        pool:
+          ${{ if eq(variables['runAsPublic'], 'true') }}:
+            name: $(DncEngInternalBuildPool)
+            demands: ImageOverride -equals build.ubuntu.2204.amd64
+          # Non-public (i.e., official builds)
+          ${{ else }}:
+            name: $(DncEngInternalBuildPool)
+            demands: ImageOverride -equals build.ubuntu.2204.amd64
+
+        variables:
+          - _buildScript: $(Build.SourcesDirectory)/build.sh --ci
+
+        preSteps:
+          - checkout: self
+            clean: true
+            persistCredentials: true
+            timeoutInMinutes: 3
+            fetchDepth: 1
+
+        steps:
+          - template: \eng\pipelines\templates\BuildAndTest.yml
+            parameters:
+              buildScript: $(_buildScript)
+              buildConfig: $(_BuildConfig)
+              repoLogPath: $(Build.Arcade.LogsPath)
 
 
 # Publish and validation steps. Only run in official builds
