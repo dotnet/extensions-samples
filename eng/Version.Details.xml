@@ -1,20 +1,20 @@
 <Dependencies>
   <ProductDependencies>
-    <Dependency Name="Microsoft.R9.Extensions.Logging.Abstractions" Version="8.0.0-alpha.1.23166.15">
+    <Dependency Name="Microsoft.R9.Extensions.Logging.Abstractions" Version="8.0.0-alpha.1.23181.1">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>8632c20ed6e152f1375c4e6eece0194410ed89db</Sha>
+      <Sha>d9063175a85631b7c1e61539313224770168a01b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.R9.Extensions.Logging.Fakes" Version="8.0.0-alpha.1.23166.15">
+    <Dependency Name="Microsoft.R9.Extensions.Logging.Fakes" Version="8.0.0-alpha.1.23181.1">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>8632c20ed6e152f1375c4e6eece0194410ed89db</Sha>
+      <Sha>d9063175a85631b7c1e61539313224770168a01b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.R9.Extensions.Redaction.Fakes" Version="8.0.0-alpha.1.23166.15">
+    <Dependency Name="Microsoft.R9.Extensions.Redaction.Fakes" Version="8.0.0-alpha.1.23181.1">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>8632c20ed6e152f1375c4e6eece0194410ed89db</Sha>
+      <Sha>d9063175a85631b7c1e61539313224770168a01b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.R9.Extensions.Time.Fakes" Version="8.0.0-alpha.1.23166.15">
+    <Dependency Name="Microsoft.R9.Extensions.Time.Fakes" Version="8.0.0-alpha.1.23181.1">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>8632c20ed6e152f1375c4e6eece0194410ed89db</Sha>
+      <Sha>d9063175a85631b7c1e61539313224770168a01b</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
