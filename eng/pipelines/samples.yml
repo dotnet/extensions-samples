@@ -123,11 +123,11 @@ stages:
         pool:
           ${{ if eq(variables['runAsPublic'], 'true') }}:
             name: $(DncEngInternalBuildPool)
-            demands: ImageOverride -equals build.ubuntu.2204.amd64
+            demands: ImageOverride -equals build.ubuntu.2004.amd64
           # Non-public (i.e., official builds)
           ${{ else }}:
             name: $(DncEngInternalBuildPool)
-            demands: ImageOverride -equals build.ubuntu.2204.amd64
+            demands: ImageOverride -equals build.ubuntu.2004.amd64
 
         variables:
           - _buildScript: $(Build.SourcesDirectory)/build.sh --ci
