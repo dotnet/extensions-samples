@@ -29,7 +29,7 @@
     <MicrosoftR9ExtensionsLoggingAbstractionsVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingAbstractionsVersion>
     <MicrosoftR9ExtensionsLoggingFakesVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingFakesVersion>
     <MicrosoftR9ExtensionsRedactionFakesVersion>8.0.0-alpha.1.23181.1</MicrosoftR9ExtensionsRedactionFakesVersion>
-    <MicrosoftR9ExtensionsTimeFakesVersion>8.0.0-alpha.1.23210.16</MicrosoftR9ExtensionsTimeFakesVersion>
+    <MicrosoftR9ExtensionsTimeFakesVersion>8.0.0-alpha.1.23212.12</MicrosoftR9ExtensionsTimeFakesVersion>
   </PropertyGroup>
   <!--
 
