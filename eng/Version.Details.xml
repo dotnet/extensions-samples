@@ -12,9 +12,9 @@
       <Uri>https://github.com/dotnet/r9</Uri>
       <Sha>d9063175a85631b7c1e61539313224770168a01b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.R9.Extensions.Time.Fakes" Version="8.0.0-alpha.1.23212.12">
+    <Dependency Name="Microsoft.R9.Extensions.Time.Fakes" Version="8.0.0-alpha.1.23213.16">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>ec97cba29b834c1ad2860314d56b13c38c891750</Sha>
+      <Sha>1f87b8e292c72ff5527f211bb362283631089bf8</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
