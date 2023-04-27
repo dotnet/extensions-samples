@@ -13,7 +13,7 @@ set DOTNET_MULTILEVEL_LOOKUP=0
 :: Put our local dotnet.exe on PATH first so Visual Studio knows which one to use
 set PATH=%DOTNET_ROOT%;%PATH%
 
-call restore.cmd
+call %~dp0restore.cmd
 
 if not exist "%DOTNET_ROOT%\dotnet.exe" (
     echo [ERROR] .NET Core has not yet been installed. Run `%~dp0restore.cmd` to install tools
@@ -23,7 +23,11 @@ if not exist "%DOTNET_ROOT%\dotnet.exe" (
 :: Prefer the VS in the developer command prompt if we're in one, followed by whatever shows up in the current search path.
 set "DEVENV=%DevEnvDir%devenv.exe"
 
-set SLN=Samples.sln
+SET sln=%~1
+
+IF "%sln%"=="" (
+    set SLN=%~dp0Samples.sln
+)
 
 if exist "%DEVENV%" (
     :: Fully qualified works
@@ -32,10 +36,10 @@ if exist "%DEVENV%" (
     where devenv.exe /Q
     if !errorlevel! equ 0 (
         :: On the PATH, use that.
-        set "COMMAND=start "" /B "%ComSpec%" /S /C "devenv.exe "%~dp0%SLN%"""
+        set "COMMAND=start "" /B "%ComSpec%" /S /C "devenv.exe "%SLN%"""
     ) else (
         :: Can't find devenv.exe, let file associations take care of it
-        set "COMMAND=start /B .\%SLN%"
+        set "COMMAND=start /B %SLN%"
     )
 )
 

@@ -26,10 +26,13 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/r9 -->
+    <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23226.19</MicrosoftExtensionsExceptionSummarizationVersion>
     <MicrosoftR9ExtensionsLoggingAbstractionsVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingAbstractionsVersion>
     <MicrosoftR9ExtensionsLoggingFakesVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingFakesVersion>
     <MicrosoftR9ExtensionsRedactionFakesVersion>8.0.0-alpha.1.23181.1</MicrosoftR9ExtensionsRedactionFakesVersion>
     <MicrosoftR9ExtensionsTimeFakesVersion>8.0.0-alpha.1.23226.19</MicrosoftR9ExtensionsTimeFakesVersion>
+    <!-- dotnet/aspnetcore -->
+    <MicrosoftExtensionsHostingVersion>8.0.0-preview.3.23174.8</MicrosoftExtensionsHostingVersion>
   </PropertyGroup>
   <!--
 

@@ -1,5 +1,13 @@
 <Dependencies>
   <ProductDependencies>
+    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.4.23226.7">
+      <Uri>https://github.com/dotnet/aspnetcore</Uri>
+      <Sha>1c068b32958a47c247bac7d29ae6b1be8c17dec0</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23226.19">
+      <Uri>https://github.com/dotnet/r9</Uri>
+      <Sha>1c068b32958a47c247bac7d29ae6b1be8c17dec0</Sha>
+    </Dependency>
     <Dependency Name="Microsoft.R9.Extensions.Logging.Abstractions" Version="8.0.0-alpha.1.23206.5">
       <Uri>https://github.com/dotnet/r9</Uri>
       <Sha>1c068b32958a47c247bac7d29ae6b1be8c17dec0</Sha>
