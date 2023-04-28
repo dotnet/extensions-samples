@@ -26,7 +26,7 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/r9 -->
-    <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23226.19</MicrosoftExtensionsExceptionSummarizationVersion>
+    <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23227.7</MicrosoftExtensionsExceptionSummarizationVersion>
     <MicrosoftR9ExtensionsLoggingAbstractionsVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingAbstractionsVersion>
     <MicrosoftR9ExtensionsLoggingFakesVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingFakesVersion>
     <MicrosoftR9ExtensionsRedactionFakesVersion>8.0.0-alpha.1.23181.1</MicrosoftR9ExtensionsRedactionFakesVersion>
