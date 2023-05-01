@@ -1,10 +1,9 @@
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
+using System;
+using Microsoft.Extensions.Compliance.Redaction;
 using Microsoft.Extensions.Logging;
-using Microsoft.R9.Extensions.Data.Classification;
-using Microsoft.R9.Extensions.Redaction;
-using Microsoft.R9.Extensions.Time;
 
 namespace FakeRedaction
 {
@@ -19,11 +18,11 @@ namespace FakeRedaction
             _logger = logger;
         }
 
-        internal IClock Clock { get; set; } = SystemClock.Instance;
+        internal TimeProvider Clock { get; set; } = TimeProvider.System;
 
-        public User Handle(EUPI<string> username)
+        public User Handle(string username)
         {
-            var user = new User(username, Clock.UtcNow);
+            var user = new User(username, Clock.GetUtcNow());
 
             _logger.UserCreated(_provider, username);
 

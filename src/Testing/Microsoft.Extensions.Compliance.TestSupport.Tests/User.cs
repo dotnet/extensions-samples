@@ -1,8 +1,8 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System;
-using Microsoft.R9.Extensions.Data.Classification;
+using Microsoft.Extensions.Compliance.Classification.Simple;
 
 namespace FakeRedaction
 {
@@ -11,7 +11,7 @@ namespace FakeRedaction
     /// </summary>
     internal sealed class User
     {
-        internal User(EUPI<string> name, DateTimeOffset registeredAt)
+        internal User(string name, DateTimeOffset registeredAt)
         {
             Name = name;
             RegisteredAt = registeredAt;
@@ -20,7 +20,8 @@ namespace FakeRedaction
         /// <summary>
         /// Gets the user's name.
         /// </summary>
-        public EUPI<string> Name { get; }
+        [PrivateData]
+        public string Name { get; }
 
         /// <summary>
         /// Gets time of user registration.
