@@ -26,13 +26,15 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/r9 -->
-    <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23229.8</MicrosoftExtensionsExceptionSummarizationVersion>
-    <MicrosoftR9ExtensionsLoggingAbstractionsVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingAbstractionsVersion>
-    <MicrosoftR9ExtensionsLoggingFakesVersion>8.0.0-alpha.1.23206.5</MicrosoftR9ExtensionsLoggingFakesVersion>
-    <MicrosoftR9ExtensionsRedactionFakesVersion>8.0.0-alpha.1.23181.1</MicrosoftR9ExtensionsRedactionFakesVersion>
-    <MicrosoftR9ExtensionsTimeFakesVersion>8.0.0-alpha.1.23226.19</MicrosoftR9ExtensionsTimeFakesVersion>
+    <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23230.2</MicrosoftExtensionsExceptionSummarizationVersion>
+    <MicrosoftExtensionsComplianceTestSupportVersion>8.0.0-alpha.1.23230.2</MicrosoftExtensionsComplianceTestSupportVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23230.2</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23230.2</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryTestSupportVersion>8.0.0-alpha.1.23230.2</MicrosoftExtensionsTelemetryTestSupportVersion>
     <!-- dotnet/aspnetcore -->
-    <MicrosoftExtensionsHostingVersion>8.0.0-preview.3.23174.8</MicrosoftExtensionsHostingVersion>
+    <!-- dotnet/runtime -->
+    <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23227.1</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23228.1</MicrosoftExtensionsHostingVersion>
   </PropertyGroup>
   <!--
 

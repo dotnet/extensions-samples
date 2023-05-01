@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to use fake redaction types in unit tests.</Description>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bcl.TimeProvider" Version="$(MicrosoftBclTimeProviderVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Compliance.TestSupport" Version="$(MicrosoftExtensionsComplianceTestSupportVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="$(MicrosoftExtensionsComplianceRedactionVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry.TestSupport" Version="$(MicrosoftExtensionsTelemetryTestSupportVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+  </ItemGroup>
+
+</Project>

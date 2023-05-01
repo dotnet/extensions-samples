@@ -10,12 +10,6 @@
 
     <TargetFrameworks>$(NetCoreTargetFrameworks);net472;net461</TargetFrameworks>
 
-    <!--
-      Execute tests only for the latest TFM.
-      See https://github.com/dotnet/arcade/blob/main/Documentation/ArcadeSdk.md#testtargetframeworks-list-of-strings.
-     -->
-    <TestTargetFrameworks>$(LatestTargetFramework)</TestTargetFrameworks>
-
     <LangVersion>preview</LangVersion>
     <Nullable>enable</Nullable>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>

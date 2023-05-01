@@ -1,9 +1,10 @@
-﻿// Licensed to the .NET Foundation under one or more agreements.
+// Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
+using Microsoft.Extensions.Compliance.Redaction;
+using Microsoft.Extensions.Compliance.Redaction.Fakes;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.R9.Extensions.Logging;
-using Microsoft.R9.Extensions.Redaction;
 using Xunit;
 
 namespace FakeRedaction
@@ -37,7 +38,6 @@ namespace FakeRedaction
             _ = handler.Handle(Username);
 
             // We focus on checking if redaction was performed correctly.
-
             Assert.Equal(Username, fakeProvider.Collector.LastRedactedData.Original);
             Assert.Equal(ExpectedRedactedData, fakeProvider.Collector.AllRedactedData.Count);
         }
