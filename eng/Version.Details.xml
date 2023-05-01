@@ -1,8 +1,8 @@
 <Dependencies>
   <ProductDependencies>
-    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.4.23226.7">
-      <Uri>https://github.com/dotnet/aspnetcore</Uri>
-      <Sha>1c068b32958a47c247bac7d29ae6b1be8c17dec0</Sha>
+    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.5.23230.4">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>2b530d4abdab90801b9c3434d62e511d9f72e3e7</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23229.8">
       <Uri>https://github.com/dotnet/r9</Uri>

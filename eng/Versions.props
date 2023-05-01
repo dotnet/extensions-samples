@@ -32,7 +32,7 @@
     <MicrosoftR9ExtensionsRedactionFakesVersion>8.0.0-alpha.1.23181.1</MicrosoftR9ExtensionsRedactionFakesVersion>
     <MicrosoftR9ExtensionsTimeFakesVersion>8.0.0-alpha.1.23226.19</MicrosoftR9ExtensionsTimeFakesVersion>
     <!-- dotnet/aspnetcore -->
-    <MicrosoftExtensionsHostingVersion>8.0.0-preview.3.23174.8</MicrosoftExtensionsHostingVersion>
+    <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23230.4</MicrosoftExtensionsHostingVersion>
   </PropertyGroup>
   <!--
 
