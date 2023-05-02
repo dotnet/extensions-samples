@@ -8,25 +8,25 @@
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>25f09dea3cebc63ef4d780daa90943fcaaacdd35</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23230.8">
+    <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23251.14">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>b1f6da06f6d030f6cf4579731075746b63ed4ba3</Sha>
+      <Sha>c36584bb7f0f8992d45cefbdc8c3625258935543</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.TestSupport" Version="8.0.0-alpha.1.23230.8">
+    <Dependency Name="Microsoft.Extensions.Compliance.TestSupport" Version="8.0.0-alpha.1.23251.14">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>b1f6da06f6d030f6cf4579731075746b63ed4ba3</Sha>
+      <Sha>c36584bb7f0f8992d45cefbdc8c3625258935543</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.0.0-alpha.1.23230.8">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.0.0-alpha.1.23251.14">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>b1f6da06f6d030f6cf4579731075746b63ed4ba3</Sha>
+      <Sha>c36584bb7f0f8992d45cefbdc8c3625258935543</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0-alpha.1.23230.8">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0-alpha.1.23251.14">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>b1f6da06f6d030f6cf4579731075746b63ed4ba3</Sha>
+      <Sha>c36584bb7f0f8992d45cefbdc8c3625258935543</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.TestSupport" Version="8.0.0-alpha.1.23230.8">
+    <Dependency Name="Microsoft.Extensions.Telemetry.TestSupport" Version="8.0.0-alpha.1.23251.14">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>b1f6da06f6d030f6cf4579731075746b63ed4ba3</Sha>
+      <Sha>c36584bb7f0f8992d45cefbdc8c3625258935543</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
