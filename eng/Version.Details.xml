@@ -1,12 +1,12 @@
 <Dependencies>
   <ProductDependencies>
-    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="8.0.0-preview.5.23251.1">
+    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="8.0.0-preview.5.23252.1">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>25f09dea3cebc63ef4d780daa90943fcaaacdd35</Sha>
+      <Sha>08ba40db0abbfa0bd23bf9b523a8c3acaded7651</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.5.23251.1">
+    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.5.23252.1">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>25f09dea3cebc63ef4d780daa90943fcaaacdd35</Sha>
+      <Sha>08ba40db0abbfa0bd23bf9b523a8c3acaded7651</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23230.8">
       <Uri>https://github.com/dotnet/r9</Uri>

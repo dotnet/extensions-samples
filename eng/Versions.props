@@ -33,8 +33,8 @@
     <MicrosoftExtensionsTelemetryTestSupportVersion>8.0.0-alpha.1.23230.8</MicrosoftExtensionsTelemetryTestSupportVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/runtime -->
-    <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23251.1</MicrosoftBclTimeProviderVersion>
-    <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23251.1</MicrosoftExtensionsHostingVersion>
+    <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23252.1</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23252.1</MicrosoftExtensionsHostingVersion>
   </PropertyGroup>
   <!--
 
