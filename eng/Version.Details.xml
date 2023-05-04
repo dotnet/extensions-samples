@@ -8,25 +8,25 @@
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>25f09dea3cebc63ef4d780daa90943fcaaacdd35</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23252.22">
+    <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23253.16">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>1477d1de97062c991e03376be6f87e274cd1e2f0</Sha>
+      <Sha>3f4094533c76eff0c706a6b08823045c0bb8896b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.TestSupport" Version="8.0.0-alpha.1.23252.22">
+    <Dependency Name="Microsoft.Extensions.Compliance.TestSupport" Version="8.0.0-alpha.1.23253.16">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>1477d1de97062c991e03376be6f87e274cd1e2f0</Sha>
+      <Sha>3f4094533c76eff0c706a6b08823045c0bb8896b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.0.0-alpha.1.23252.22">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.0.0-alpha.1.23253.16">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>1477d1de97062c991e03376be6f87e274cd1e2f0</Sha>
+      <Sha>3f4094533c76eff0c706a6b08823045c0bb8896b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0-alpha.1.23252.22">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0-alpha.1.23253.16">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>1477d1de97062c991e03376be6f87e274cd1e2f0</Sha>
+      <Sha>3f4094533c76eff0c706a6b08823045c0bb8896b</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.TestSupport" Version="8.0.0-alpha.1.23252.22">
+    <Dependency Name="Microsoft.Extensions.Telemetry.TestSupport" Version="8.0.0-alpha.1.23253.16">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>1477d1de97062c991e03376be6f87e274cd1e2f0</Sha>
+      <Sha>3f4094533c76eff0c706a6b08823045c0bb8896b</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
