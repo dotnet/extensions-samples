@@ -1,12 +1,12 @@
 <Dependencies>
   <ProductDependencies>
-    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="8.0.0-preview.5.23251.1">
+    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="8.0.0-preview.5.23254.1">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>25f09dea3cebc63ef4d780daa90943fcaaacdd35</Sha>
+      <Sha>3232ad36a791b7b8dce81c3358cd6cec4e42c06e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.5.23251.1">
+    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.5.23254.1">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>25f09dea3cebc63ef4d780daa90943fcaaacdd35</Sha>
+      <Sha>3232ad36a791b7b8dce81c3358cd6cec4e42c06e</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.ExceptionSummarization" Version="8.0.0-alpha.1.23253.16">
       <Uri>https://github.com/dotnet/r9</Uri>
@@ -30,13 +30,13 @@
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
-    <Dependency Name="Microsoft.DotNet.Arcade.Sdk" Version="8.0.0-beta.23226.4">
+    <Dependency Name="Microsoft.DotNet.Arcade.Sdk" Version="8.0.0-beta.23253.5">
       <Uri>https://github.com/dotnet/arcade</Uri>
-      <Sha>469dcc0cbcba5221727c8a5b9eec4a478e24a780</Sha>
+      <Sha>39d795a2d83c7ee351a26c4544f5352e62e30da1</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.DotNet.Helix.Sdk" Version="8.0.0-beta.23226.4">
+    <Dependency Name="Microsoft.DotNet.Helix.Sdk" Version="8.0.0-beta.23253.5">
       <Uri>https://github.com/dotnet/arcade</Uri>
-      <Sha>469dcc0cbcba5221727c8a5b9eec4a478e24a780</Sha>
+      <Sha>39d795a2d83c7ee351a26c4544f5352e62e30da1</Sha>
     </Dependency>
   </ToolsetDependencies>
 </Dependencies>
