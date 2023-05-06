@@ -26,11 +26,11 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/r9 -->
-    <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23254.15</MicrosoftExtensionsExceptionSummarizationVersion>
-    <MicrosoftExtensionsComplianceTestSupportVersion>8.0.0-alpha.1.23254.15</MicrosoftExtensionsComplianceTestSupportVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23254.15</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23254.15</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryTestSupportVersion>8.0.0-alpha.1.23254.15</MicrosoftExtensionsTelemetryTestSupportVersion>
+    <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsExceptionSummarizationVersion>
+    <MicrosoftExtensionsComplianceTestSupportVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsComplianceTestSupportVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryTestSupportVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsTelemetryTestSupportVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23254.1</MicrosoftBclTimeProviderVersion>
