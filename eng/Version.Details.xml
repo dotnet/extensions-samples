@@ -8,6 +8,10 @@
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>5f0d620cae0649dfb56babf6603cb4190f65c3bd</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.AspNetCore.Telemetry.Middleware" Version="8.0.0-alpha.1.23257.14">
+      <Uri>https://github.com/dotnet/r9</Uri>
+      <Sha>3363fe5fcc48fe7ce96262627441676561cec0d8</Sha>
+    </Dependency>
     <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="8.0.0-alpha.1.23257.14">
       <Uri>https://github.com/dotnet/r9</Uri>
       <Sha>3363fe5fcc48fe7ce96262627441676561cec0d8</Sha>

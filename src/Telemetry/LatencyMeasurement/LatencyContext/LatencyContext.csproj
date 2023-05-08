@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to use latency context and request latency middleware.</Description>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Telemetry.Middleware" Version="$(MicrosoftAspNetCoreTelemetryMiddlewareVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry" Version="$(MicrosoftExtensionsTelemetryVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
+  </ItemGroup>
+
+</Project>
