@@ -28,8 +28,8 @@
     <!-- dotnet/r9 -->
     <MicrosoftExtensionsExceptionSummarizationVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsExceptionSummarizationVersion>
     <MicrosoftExtensionsComplianceTestSupportVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsComplianceTestSupportVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsTelemetryAbstractionsVersion>
     <MicrosoftExtensionsTelemetryTestSupportVersion>8.0.0-alpha.1.23255.3</MicrosoftExtensionsTelemetryTestSupportVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/runtime -->
