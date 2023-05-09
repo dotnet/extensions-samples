@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to use request checkpoint.</Description>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Telemetry.Middleware" Version="$(MicrosoftAspNetCoreTelemetryMiddlewareVersion)" />
+  </ItemGroup>
+
+</Project>
