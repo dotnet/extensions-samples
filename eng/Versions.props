@@ -26,6 +26,7 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/r9 -->
+    <MicrosoftAspNetCoreTelemetryMiddlewareVersion>8.0.0-alpha.1.23257.14</MicrosoftAspNetCoreTelemetryMiddlewareVersion>
     <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsComplianceRedactionVersion>
     <MicrosoftExtensionsComplianceTestingVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsComplianceTestingVersion>
     <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
