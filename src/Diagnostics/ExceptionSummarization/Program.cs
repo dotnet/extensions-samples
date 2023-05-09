@@ -3,6 +3,7 @@
 
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.ExceptionSummarization;
 using Microsoft.Extensions.Hosting;
 
 namespace Microsoft.Extensions.ExceptionSummarization.Sample;
