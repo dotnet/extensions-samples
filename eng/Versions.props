@@ -39,9 +39,9 @@
     <MicrosoftExtensionsTelemetryVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsTelemetryVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/runtime -->
-    <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23259.1</MicrosoftBclTimeProviderVersion>
-    <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23259.1</MicrosoftExtensionsHostingVersion>
-</PropertyGroup>
+    <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23259.10</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23259.10</MicrosoftExtensionsHostingVersion>
+  </PropertyGroup>
   <!--
 
     ^^^^^^^^^^
@@ -64,6 +64,5 @@
     <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
     <OpenTelemetryExporterConsoleVersion>1.4.0</OpenTelemetryExporterConsoleVersion>
     <OpenTelemetryExtensionsHostingVersion>1.4.0</OpenTelemetryExtensionsHostingVersion>
-    
   </PropertyGroup>
 </Project>
