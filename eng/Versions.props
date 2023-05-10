@@ -41,7 +41,7 @@
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23259.1</MicrosoftBclTimeProviderVersion>
     <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23259.1</MicrosoftExtensionsHostingVersion>
-</PropertyGroup>
+  </PropertyGroup>
   <!--
 
     ^^^^^^^^^^
@@ -64,6 +64,5 @@
     <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
     <OpenTelemetryExporterConsoleVersion>1.4.0</OpenTelemetryExporterConsoleVersion>
     <OpenTelemetryExtensionsHostingVersion>1.4.0</OpenTelemetryExtensionsHostingVersion>
-    
   </PropertyGroup>
 </Project>
