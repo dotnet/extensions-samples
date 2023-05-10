@@ -27,17 +27,21 @@
   <PropertyGroup Label="Automated">
     <!-- dotnet/r9 -->
     <MicrosoftAspNetCoreTelemetryMiddlewareVersion>8.0.0-alpha.1.23257.14</MicrosoftAspNetCoreTelemetryMiddlewareVersion>
+    <MicrosoftAspNetCoreTelemetryVersion>8.0.0-alpha.1.23257.14</MicrosoftAspNetCoreTelemetryVersion>
+    <MicrosoftExtensionsAmbientMetadataApplicationVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsAmbientMetadataApplicationVersion>
     <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsComplianceRedactionVersion>
     <MicrosoftExtensionsComplianceTestingVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsComplianceTestingVersion>
     <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsHttpTelemetryVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsHttpTelemetryVersion>
     <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryConsoleVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsTelemetryConsoleVersion>
     <MicrosoftExtensionsTelemetryTestingVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsTelemetryTestingVersion>
     <MicrosoftExtensionsTelemetryVersion>8.0.0-alpha.1.23257.14</MicrosoftExtensionsTelemetryVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23259.1</MicrosoftBclTimeProviderVersion>
     <MicrosoftExtensionsHostingVersion>8.0.0-preview.5.23259.1</MicrosoftExtensionsHostingVersion>
-  </PropertyGroup>
+</PropertyGroup>
   <!--
 
     ^^^^^^^^^^
@@ -58,5 +62,8 @@
     <XUnitStaFactPackageVersion>1.0.33-beta</XUnitStaFactPackageVersion>
     <!-- Additional unchanging dependencies -->
     <NewtonsoftJsonVersion>13.0.1</NewtonsoftJsonVersion>
+    <OpenTelemetryExporterConsoleVersion>1.4.0</OpenTelemetryExporterConsoleVersion>
+    <OpenTelemetryExtensionsHostingVersion>1.4.0</OpenTelemetryExtensionsHostingVersion>
+    
   </PropertyGroup>
 </Project>
