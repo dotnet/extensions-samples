@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <h3>Learn about <a href="http://aka.ms/r9">R9</a>!</h3>
+	<ul>
+		@{
+			var tags = ViewData["Message"] as IEnumerable<KeyValuePair<string, string?>>;
+			if(tags is not null)
+			{
+				@foreach(var tag in tags)
+				  {
+				   <li>@tag.Key:@tag.Value</li>
+				  }
+			}
+		}
+	</ul>
+</div>
