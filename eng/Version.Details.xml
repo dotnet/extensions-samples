@@ -8,49 +8,49 @@
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>eead6a328cf3a7426e62d1441343b4b0e1f57d19</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.AspNetCore.Telemetry" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.AspNetCore.Telemetry" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.AspNetCore.Telemetry.Middleware" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.AspNetCore.Telemetry.Middleware" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.AmbientMetadata.Application" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.AmbientMetadata.Application" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Http.Telemetry" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Http.Telemetry" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Telemetry" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Console" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Console" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Testing" Version="8.0.0-alpha.1.23261.26">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Testing" Version="8.0.0-alpha.1.23265.4">
       <Uri>https://github.com/dotnet/r9</Uri>
-      <Sha>42c25189407d0776751bb207deabc67ec14b6410</Sha>
+      <Sha>93392cc46e1774998e925c73d628476021c72d6e</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
