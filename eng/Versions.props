@@ -26,17 +26,17 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/r9 -->
-    <MicrosoftAspNetCoreTelemetryMiddlewareVersion>8.0.0-alpha.1.23265.13</MicrosoftAspNetCoreTelemetryMiddlewareVersion>
-    <MicrosoftAspNetCoreTelemetryVersion>8.0.0-alpha.1.23265.13</MicrosoftAspNetCoreTelemetryVersion>
-    <MicrosoftExtensionsAmbientMetadataApplicationVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsAmbientMetadataApplicationVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsHttpTelemetryVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsHttpTelemetryVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryConsoleVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsTelemetryConsoleVersion>
-    <MicrosoftExtensionsTelemetryTestingVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsTelemetryTestingVersion>
-    <MicrosoftExtensionsTelemetryVersion>8.0.0-alpha.1.23265.13</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftAspNetCoreTelemetryMiddlewareVersion>8.0.0-alpha.1.23267.8</MicrosoftAspNetCoreTelemetryMiddlewareVersion>
+    <MicrosoftAspNetCoreTelemetryVersion>8.0.0-alpha.1.23267.8</MicrosoftAspNetCoreTelemetryVersion>
+    <MicrosoftExtensionsAmbientMetadataApplicationVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsAmbientMetadataApplicationVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsHttpTelemetryVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsHttpTelemetryVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryConsoleVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsTelemetryConsoleVersion>
+    <MicrosoftExtensionsTelemetryTestingVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsTelemetryTestingVersion>
+    <MicrosoftExtensionsTelemetryVersion>8.0.0-alpha.1.23267.8</MicrosoftExtensionsTelemetryVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>8.0.0-preview.5.23259.10</MicrosoftBclTimeProviderVersion>
