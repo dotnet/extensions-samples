@@ -1,12 +1,12 @@
 <Dependencies>
   <ProductDependencies>
-    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="8.0.0-preview.6.23307.1">
+    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="8.0.0-preview.6.23308.1">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>6e34b5d4e9b16321f37c108fea3aa7e4e04b495a</Sha>
+      <Sha>7c00b17be1b2ffb6ed49ad68cf36e9a056323152</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.6.23307.1">
+    <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0-preview.6.23308.1">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>6e34b5d4e9b16321f37c108fea3aa7e4e04b495a</Sha>
+      <Sha>7c00b17be1b2ffb6ed49ad68cf36e9a056323152</Sha>
     </Dependency>
     <Dependency Name="Microsoft.AspNetCore.Telemetry" Version="8.0.0-alpha.1.23257.14">
       <Uri>https://github.com/dotnet/r9</Uri>
