@@ -4,12 +4,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Telemetry;
 using Microsoft.Extensions.AmbientMetadata;
-using Microsoft.Extensions.Compliance.Classification.Simple;
 using Microsoft.Extensions.Compliance.Redaction;
+using Microsoft.Extensions.Compliance.Testing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http.Telemetry.Tracing;
-using Microsoft.R9.Extensions.Enrichment;
+using Microsoft.Extensions.Telemetry.Enrichment;
 using OpenTelemetry.Trace;
 
 namespace TracingHttp;
@@ -27,7 +27,7 @@ internal sealed class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         // Configure redaction. XXHashRedactor is used as an example
-        _ = services.AddRedaction(redaction => redaction.SetXXHashRedactor(_ => { }, SimpleClassifications.PrivateData));
+        _ = services.AddRedaction(redaction => redaction.SetXXHash3Redactor(_ => { }, SimpleClassifications.PrivateData));
 
         _ = services.AddRouting();
 

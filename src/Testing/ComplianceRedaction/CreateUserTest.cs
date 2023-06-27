@@ -2,9 +2,9 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using Microsoft.Extensions.Compliance.Redaction;
-using Microsoft.Extensions.Compliance.Redaction.Fakes;
+using Microsoft.Extensions.Compliance.Testing;
 using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.R9.Extensions.Logging;
+using Microsoft.Extensions.Telemetry.Testing.Logging;
 using Xunit;
 
 namespace FakeRedaction
