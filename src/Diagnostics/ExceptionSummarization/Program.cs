@@ -13,7 +13,6 @@ internal static class Program
     internal static async Task Main(string[] args)
     {
         using var host = Host.CreateDefaultBuilder(args)
-            //.CreateBuilder(args, x => x.LoggingEnabled = true)
             .ConfigureServices((_, services) =>
                 {
                     services.AddExceptionSummarizer(b => b.AddHttpProvider());

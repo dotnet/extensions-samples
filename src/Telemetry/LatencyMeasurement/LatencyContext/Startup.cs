@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Telemetry;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Telemetry.Latency;
-using Microsoft.R9.Extensions.Latency;
 
 namespace LatencyContext
 {

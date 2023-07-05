@@ -9,8 +9,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Telemetry.Http;
-using Microsoft.R9.Extensions.Telemetry;
+using Microsoft.Extensions.Http.Telemetry;
+using Microsoft.Extensions.Telemetry;
 
 namespace TracingHttp;
 
