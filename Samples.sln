@@ -20,19 +20,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagnostics", "Diagnostics", "{FB9718C9-18B4-4AD3-A0D8-1EA93382334B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionSummarization", "src\Diagnostics\ExceptionSummarization\ExceptionSummarization.csproj", "{DBA6097F-1B60-49B8-8DDB-FACD96010B2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.ExceptionSummarization.Sample", "src\Diagnostics\ExceptionSummarization\Microsoft.Extensions.ExceptionSummarization.Sample.csproj", "{DBA6097F-1B60-49B8-8DDB-FACD96010B2B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplianceRedaction.Tests", "src\Testing\ComplianceRedaction\ComplianceRedaction.Tests.csproj", "{1E9B5F0A-F3D1-4D7D-A1D0-709D5339EA2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Extensions.Compliance.Testing.Tests", "src\Testing\ComplianceRedaction\Microsoft.Extensions.Compliance.Testing.Tests.csproj", "{1E9B5F0A-F3D1-4D7D-A1D0-709D5339EA2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Telemetry", "Telemetry", "{72B462BA-F903-4CA7-8A0A-6C030BE408BC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LatencyMeasurement", "LatencyMeasurement", "{CBA4C7B6-6F01-4BD4-BC90-7DB1F1D5034C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LatencyContext", "src\Telemetry\LatencyMeasurement\LatencyContext\LatencyContext.csproj", "{F8A03BBA-9846-4C9B-A4BE-9CBE8B416974}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DistributedTracing", "DistributedTracing", "{52BB3E11-907B-4509-A35B-42089C16D473}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TracingHttp", "src\Telemetry\DistributedTracing\TracingHttp\TracingHttp.csproj", "{C7B96604-FA0C-40D3-BEDC-6C140B30E1D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,10 +48,6 @@ Global
 		{F8A03BBA-9846-4C9B-A4BE-9CBE8B416974}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8A03BBA-9846-4C9B-A4BE-9CBE8B416974}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8A03BBA-9846-4C9B-A4BE-9CBE8B416974}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7B96604-FA0C-40D3-BEDC-6C140B30E1D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7B96604-FA0C-40D3-BEDC-6C140B30E1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7B96604-FA0C-40D3-BEDC-6C140B30E1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7B96604-FA0C-40D3-BEDC-6C140B30E1D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,8 +60,6 @@ Global
 		{72B462BA-F903-4CA7-8A0A-6C030BE408BC} = {301296EC-54FF-4ADC-B2D1-281E0C7F2867}
 		{CBA4C7B6-6F01-4BD4-BC90-7DB1F1D5034C} = {72B462BA-F903-4CA7-8A0A-6C030BE408BC}
 		{F8A03BBA-9846-4C9B-A4BE-9CBE8B416974} = {CBA4C7B6-6F01-4BD4-BC90-7DB1F1D5034C}
-		{52BB3E11-907B-4509-A35B-42089C16D473} = {72B462BA-F903-4CA7-8A0A-6C030BE408BC}
-		{C7B96604-FA0C-40D3-BEDC-6C140B30E1D9} = {52BB3E11-907B-4509-A35B-42089C16D473}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6083D400-BF26-4ACE-86A8-778D26A8FA6A}
