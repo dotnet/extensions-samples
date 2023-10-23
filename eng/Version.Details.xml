@@ -23,37 +23,37 @@
       <Sha>e431371c056cdd2f682f45a7909a6078e85b90dd</Sha>
     </Dependency>
     <!-- dotnet/extensions -->
-    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.AmbientMetadata.Application" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.Extensions.AmbientMetadata.Application" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.Extra" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.Extra" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExtraAbstractions" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExtraAbstractions" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.0.0-alpha.1.23523.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.0.0-alpha.1.23523.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>acdcdc0642743060dbc02252239c0435d4a5f4c3</Sha>
+      <Sha>2521489db531649f4f22c696a314bbf2c670128e</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
