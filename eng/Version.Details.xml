@@ -16,21 +16,21 @@
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>f53cfd3eae048bb05a501829d6b00412186d0c2a</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.AmbientMetadata.Application" Version="8.0.0-preview.7.23330.1">
+    <Dependency Name="Microsoft.Extensions.AmbientMetadata.Application" Version="9.0.0-alpha.1.23522.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>f53cfd3eae048bb05a501829d6b00412186d0c2a</Sha>
+      <Sha>c2048dc73a920648a5faab9e5702b230a0a7da44</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="8.0.0-preview.7.23330.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.0.0-alpha.1.23522.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>f53cfd3eae048bb05a501829d6b00412186d0c2a</Sha>
+      <Sha>c2048dc73a920648a5faab9e5702b230a0a7da44</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.0.0-preview.7.23330.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.0.0-alpha.1.23522.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>f53cfd3eae048bb05a501829d6b00412186d0c2a</Sha>
+      <Sha>c2048dc73a920648a5faab9e5702b230a0a7da44</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="8.0.0-preview.7.23330.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.0.0-alpha.1.23522.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>f53cfd3eae048bb05a501829d6b00412186d0c2a</Sha>
+      <Sha>c2048dc73a920648a5faab9e5702b230a0a7da44</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.Http.Telemetry" Version="8.0.0-preview.7.23330.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
