@@ -4,13 +4,12 @@
 using Microsoft.Extensions.Compliance.Redaction;
 using Microsoft.Extensions.Compliance.Testing;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Telemetry.Logging;
 
 namespace FakeRedaction
 {
     internal static partial class Log
     {
-        [LogMethod(0, LogLevel.Information, "User with {username} got created.")]
+        [LoggerMessage(0, LogLevel.Information, "User with {username} got created.")]
         public static partial void UserCreated(this ILogger logger, IRedactorProvider redactor, [PrivateData] string username);
     }
 }

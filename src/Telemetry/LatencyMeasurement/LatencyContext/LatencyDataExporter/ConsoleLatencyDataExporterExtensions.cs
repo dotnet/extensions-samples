@@ -3,7 +3,7 @@
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.Extensions.Telemetry.Latency;
+using Microsoft.Extensions.Diagnostics.Latency;
 
 namespace LatencyContext;
 
