@@ -2,14 +2,6 @@
   <Import Project="Sdk.props" Sdk="Microsoft.DotNet.Arcade.Sdk" />
 
   <PropertyGroup>
-    <!-- The latest TFM we're targeting overall -->
-    <LatestTargetFramework>net$(MajorVersion).$(MinorVersion)</LatestTargetFramework>
-    <!-- All the .NET TFMs we're building -->
-    <SupportedNetCoreTargetFrameworks>$(LatestTargetFramework);net7.0;net6.0</SupportedNetCoreTargetFrameworks>
-    <NetCoreTargetFrameworks>$(SupportedNetCoreTargetFrameworks);netcoreapp3.1</NetCoreTargetFrameworks>
-
-    <TargetFrameworks>$(NetCoreTargetFrameworks);net462</TargetFrameworks>
-
     <LangVersion>preview</LangVersion>
     <Nullable>enable</Nullable>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -18,12 +10,32 @@
     <SuppressTfmSupportBuildWarnings>true</SuppressTfmSupportBuildWarnings>
     <EnableXlfLocalization>false</EnableXlfLocalization>
     <UpdateXlfOnBuild>false</UpdateXlfOnBuild>
-
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
+  <!-- https://github.com/dotnet/aspnetcore/blob/72b0269372a/eng/Common.props#L3-L6 -->
   <PropertyGroup>
-    <Product>Microsoft&#xAE; R9 SDK Samples</Product>
+    <TargetOsName Condition=" '$(TargetOsName)' == '' AND $([MSBuild]::IsOSPlatform('Windows'))">win</TargetOsName>
+    <IsWindowsBuild>false</IsWindowsBuild>
+    <IsWindowsBuild Condition=" '$(TargetOsName)' == 'win' ">true</IsWindowsBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- The latest TFM we're targeting overall -->
+    <LatestTargetFramework>net$(MajorVersion).$(MinorVersion)</LatestTargetFramework>
+    <NetCoreTargetFrameworks>$(LatestTargetFramework);net6.0</NetCoreTargetFrameworks>
+
+    <!-- All the .NET TFMs we're building -->
+    <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks Condition=" '$(IsWindowsBuild)' == 'true' ">$(NetCoreTargetFrameworks);net462</TargetFrameworks>
+ 
+    <!-- All the .NET TFMs we're testing against -->
+    <TestNetCoreTargetFrameworks>$(NetCoreTargetFrameworks)</TestNetCoreTargetFrameworks>
+    <TestNetCoreTargetFrameworks Condition=" '$(IsWindowsBuild)' == 'true' ">$(TestNetCoreTargetFrameworks);net462</TestNetCoreTargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Product>Microsoft&#xAE; .NET Platform Extensions samples</Product>
     <Copyright>$(CopyrightNetFoundation)</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>R9;Azure;Cloud</PackageTags>

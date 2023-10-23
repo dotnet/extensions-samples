@@ -3,12 +3,11 @@
 
 using System.Text;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Telemetry.Logging;
 
 namespace LatencyContext;
 
 internal static partial class Log
 {
-    [LogMethod(0, "{message}")]
+    [LoggerMessage(0, "{message}")]
     public static partial void Latency(ILogger logger, LogLevel level, StringBuilder message);
 }
