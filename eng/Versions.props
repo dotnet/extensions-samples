@@ -33,14 +33,14 @@
     <!-- dotnet/aspnetcore -->
     <MicrosoftAspNetCoreAppRuntimewinx64Version>8.0.0-rtm.23520.10</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.0.0-rtm.23523.6</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAmbientMetadataApplicationVersion>8.0.0-rtm.23523.6</MicrosoftExtensionsAmbientMetadataApplicationVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-rtm.23523.6</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>8.0.0-rtm.23523.6</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0-rtm.23523.6</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>8.0.0-rtm.23523.6</MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>
-    <MicrosoftExtensionsDiagnosticsExtraVersion>8.0.0-rtm.23523.6</MicrosoftExtensionsDiagnosticsExtraVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0-rtm.23523.6</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.0.0-rtm.23523.7</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAmbientMetadataApplicationVersion>8.0.0-rtm.23523.7</MicrosoftExtensionsAmbientMetadataApplicationVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0-rtm.23523.7</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>8.0.0-rtm.23523.7</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0-rtm.23523.7</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>8.0.0-rtm.23523.7</MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>
+    <MicrosoftExtensionsDiagnosticsExtraVersion>8.0.0-rtm.23523.7</MicrosoftExtensionsDiagnosticsExtraVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0-rtm.23523.7</MicrosoftExtensionsDiagnosticsTestingVersion>
   </PropertyGroup>
   <!--
 
