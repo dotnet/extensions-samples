@@ -9,6 +9,30 @@
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0-rtm.23520.16" CoherentParentDependency="Microsoft.Extensions.AmbientMetadata.Application">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.Logging" Version="8.0.0-rtm.23520.16" CoherentParentDependency="Microsoft.Extensions.AmbientMetadata.Application">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.Logging.Console" Version="8.0.0-rtm.23520.16" CoherentParentDependency="Microsoft.Extensions.AmbientMetadata.Application">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.Options" Version="8.0.0-rtm.23520.16" CoherentParentDependency="Microsoft.Extensions.AmbientMetadata.Application">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0-rtm.23520.16" CoherentParentDependency="Microsoft.Extensions.AmbientMetadata.Application">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+    </Dependency>
+    <Dependency Name="System.Diagnostics.DiagnosticSource" Version="8.0.0-rtm.23520.16" CoherentParentDependency="Microsoft.Extensions.AmbientMetadata.Application">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+    </Dependency>
     <!--
          Win-x64 is used here because we have picked an arbitrary runtime identifier to flow the version of the latest NETCore.App runtime.
          All Runtime.$rid packages should have the same version.
@@ -52,6 +76,10 @@
       <Sha>6602e6a12c012db4246f261c179f74fd612cd0a6</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="8.0.0-rtm.23524.3">
+      <Uri>https://github.com/dotnet/extensions</Uri>
+      <Sha>6602e6a12c012db4246f261c179f74fd612cd0a6</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0-rtm.23526.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>6602e6a12c012db4246f261c179f74fd612cd0a6</Sha>
     </Dependency>

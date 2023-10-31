@@ -29,6 +29,12 @@
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>8.0.0-rtm.23520.16</MicrosoftBclTimeProviderVersion>
     <MicrosoftExtensionsHostingVersion>8.0.0-rtm.23520.16</MicrosoftExtensionsHostingVersion>
+    <MicrosoftExtensionsOptionsVersion>8.0.0-rtm.23520.16</MicrosoftExtensionsOptionsVersion>
+    <MicrosoftExtensionsLoggingAbstractionsVersion>8.0.0-rtm.23520.16</MicrosoftExtensionsLoggingAbstractionsVersion>
+    <MicrosoftExtensionsLoggingVersion>8.0.0-rtm.23520.16</MicrosoftExtensionsLoggingVersion>
+    <MicrosoftExtensionsLoggingConsoleVersion>8.0.0-rtm.23520.16</MicrosoftExtensionsLoggingConsoleVersion>
+    <MicrosoftExtensionsDependencyInjectionAbstractionsVersion>8.0.0-rtm.23520.16</MicrosoftExtensionsDependencyInjectionAbstractionsVersion>
+    <SystemDiagnosticsDiagnosticSourceVersion>8.0.0-rtm.23520.16</SystemDiagnosticsDiagnosticSourceVersion>
     <MicrosoftNETCoreAppRuntimewinx64Version>8.0.0-rtm.23520.16</MicrosoftNETCoreAppRuntimewinx64Version>
     <!-- dotnet/aspnetcore -->
     <MicrosoftAspNetCoreAppRuntimewinx64Version>8.0.0-rtm.23520.10</MicrosoftAspNetCoreAppRuntimewinx64Version>
@@ -41,6 +47,7 @@
     <MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>8.0.0-rtm.23524.3</MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>
     <MicrosoftExtensionsDiagnosticsExtraVersion>8.0.0-rtm.23524.3</MicrosoftExtensionsDiagnosticsExtraVersion>
     <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0-rtm.23524.3</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0-rtm.23526.3</MicrosoftExtensionsTelemetryAbstractionsVersion>
   </PropertyGroup>
   <!--
 
