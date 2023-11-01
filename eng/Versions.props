@@ -27,11 +27,11 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/runtime -->
-    <MicrosoftBclTimeProviderVersion>8.0.0-rtm.23520.16</MicrosoftBclTimeProviderVersion>
-    <MicrosoftExtensionsHostingVersion>8.0.0-rtm.23520.16</MicrosoftExtensionsHostingVersion>
-    <MicrosoftNETCoreAppRuntimewinx64Version>8.0.0-rtm.23520.16</MicrosoftNETCoreAppRuntimewinx64Version>
+    <MicrosoftBclTimeProviderVersion>8.0.0</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsHostingVersion>8.0.0</MicrosoftExtensionsHostingVersion>
+    <MicrosoftNETCoreAppRuntimewinx64Version>8.0.0</MicrosoftNETCoreAppRuntimewinx64Version>
     <!-- dotnet/aspnetcore -->
-    <MicrosoftAspNetCoreAppRuntimewinx64Version>8.0.0-rtm.23520.10</MicrosoftAspNetCoreAppRuntimewinx64Version>
+    <MicrosoftAspNetCoreAppRuntimewinx64Version>8.0.0</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
     <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.0.0</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
     <MicrosoftExtensionsComplianceRedactionVersion>8.0.0</MicrosoftExtensionsComplianceRedactionVersion>
