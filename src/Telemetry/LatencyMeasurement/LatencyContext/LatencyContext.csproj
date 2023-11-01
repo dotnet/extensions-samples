@@ -8,8 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.Middleware" Version="$(MicrosoftAspNetCoreDiagnosticsMiddlewareVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.Extra" Version="$(MicrosoftExtensionsDiagnosticsExtraVersion)" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.ExtraAbstractions" Version="$(MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
   </ItemGroup>
 
 </Project>
