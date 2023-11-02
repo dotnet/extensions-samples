@@ -33,7 +33,9 @@ internal static class Program
                         Indented = true
                     });
 
-                // We need to register the redactor to be able to redact sensitive data:
+                // We need to register the redactor that will handle all sensitive data.
+                // Here we use the "StarRedactor" which replaces the sensitive data with asterisks.
+                // In a real world scenario you would use the one that suits your needs (e.g. HMAC redactor).
                 builder.Services.AddRedaction(x => x.SetRedactor<StarRedactor>(new DataClassificationSet(DataTaxonomy.Classification)));
             });
 
