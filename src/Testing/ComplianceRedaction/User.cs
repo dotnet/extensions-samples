@@ -4,7 +4,7 @@
 using System;
 using Microsoft.Extensions.Compliance.Testing;
 
-namespace FakeRedaction
+namespace ComplianceTesting
 {
     /// <summary>
     /// A simple user type, which features a registration time.

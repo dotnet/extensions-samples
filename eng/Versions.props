@@ -29,6 +29,7 @@
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>8.0.0</MicrosoftBclTimeProviderVersion>
     <MicrosoftExtensionsHostingVersion>8.0.0</MicrosoftExtensionsHostingVersion>
+    <MicrosoftExtensionsLoggingConsoleVersion>8.0.0</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
     <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.0.0</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
@@ -37,6 +38,7 @@
     <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
     <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0</MicrosoftExtensionsDiagnosticsTestingVersion>
     <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>8.0.0</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 
