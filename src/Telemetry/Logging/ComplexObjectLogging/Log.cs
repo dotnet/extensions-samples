@@ -1,6 +1,7 @@
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
+using System.Collections.Generic;
 using ComplexObjectLogging.Compliance;
 using ComplexObjectLogging.Models;
 using Microsoft.Extensions.Logging;
@@ -16,11 +17,16 @@ internal static partial class Log
 
     // This one shows the usage of a custom tag provider.
     // Please inspect DataFrameTagProvider type to see how it is implemented and what gets logged.
-    // Notice that "logger" parameter has "this" modifier, so the method can be used as an extension method.
+    // We optionally enable OmitReferenceName to remove the parameter name from the log record (e.g. "StreamId" instead of "dataFrame.StreamId").
     [LoggerMessage(Level = LogLevel.Information, Message = "Data frame was sent")]
     public static partial void DataFrameSent(
-        this ILogger logger,
-        [TagProvider(typeof(DataFrameTagProvider), nameof(DataFrameTagProvider.Provide))] DataFrame dataFrame);
+        ILogger logger,
+        [TagProvider(typeof(DataFrameTagProvider), nameof(DataFrameTagProvider.Provide), OmitReferenceName = true)] DataFrame dataFrame);
+
+    // This overload shows how to log an enumerable:
+    // Please note that "ILogger" parameter is nullable, the generated implementation won't throw if it is null.
+    [LoggerMessage(Level = LogLevel.Debug, Message = "Data frame was sent to {Destinations}")]
+    public static partial void DataFrameSent(ILogger? logger, IEnumerable<string> destinations);
 
     // This method shows how to log sensitive data in a compliance manner by using redaction feature.
     // Please inspect UserAvailability type to see how it is implemented and what gets logged.
