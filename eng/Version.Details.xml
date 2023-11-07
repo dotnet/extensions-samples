@@ -3,11 +3,11 @@
     <!-- dotnet/runtime -->
     <Dependency Name="Microsoft.Bcl.TimeProvider" Version="8.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+      <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.Hosting" Version="8.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
+      <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
     </Dependency>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
