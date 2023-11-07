@@ -28,7 +28,7 @@ internal static partial class Log
     [LoggerMessage(Level = LogLevel.Debug, Message = "Data frame was sent to {Destinations}")]
     public static partial void DataFrameSent(ILogger? logger, IEnumerable<string> destinations);
 
-    // This method shows how to log sensitive data in a compliance manner by using redaction feature.
+    // This method shows how to log sensitive data in a compliant manner by using redaction feature.
     // Please inspect UserAvailability type to see how it is implemented and what gets logged.
     [LoggerMessage(Level = LogLevel.Warning, Message = "User {Name} has now different status")]
     public static partial void UserIdAvailabilityChanged(
