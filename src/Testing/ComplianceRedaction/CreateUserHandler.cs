@@ -2,19 +2,16 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System;
-using Microsoft.Extensions.Compliance.Redaction;
 using Microsoft.Extensions.Logging;
 
-namespace FakeRedaction
+namespace ComplianceTesting
 {
-    internal sealed class CreateUser
+    internal sealed class CreateUserHandler
     {
         private readonly ILogger _logger;
-        private readonly IRedactorProvider _provider;
 
-        public CreateUser(IRedactorProvider redactorProvider, ILogger<CreateUser> logger)
+        public CreateUserHandler(ILogger<CreateUserHandler> logger)
         {
-            _provider = redactorProvider;
             _logger = logger;
         }
 
@@ -24,7 +21,7 @@ namespace FakeRedaction
         {
             var user = new User(username, Clock.GetUtcNow());
 
-            _logger.UserCreated(_provider, username);
+            _logger.UserCreated(username);
 
             return user;
         }
