@@ -24,9 +24,9 @@ internal sealed partial class Metric
         public const string DayOfWeek = nameof(DayOfWeek);
     }
 
-    // This shows how to define a histogram metric with tags based on some RequestInfo.
+    // This shows how to define a histogram metric with tags based on the RequestInfo type.
     // All tags for this metric will be automatically generated from the the properties
-    // of the RequestInfo which are annotated with the [TagName] attribute.
+    // of the RequestInfo type which are annotated with the [TagName] attribute.
     [Histogram(typeof(RequestInfo), Name = MetricNames.RequestStats)]
     public static partial RequestStatsHistogram CreateRequestStatsHistogram(Meter meter);
 
