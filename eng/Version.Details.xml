@@ -9,6 +9,10 @@
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.Extensions.Diagnostics" Version="8.0.0">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
+    </Dependency>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
     <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="8.0.0">
@@ -32,6 +36,10 @@
       <Sha>f8ddd93356a1247120436abbfa8f6517dc0fdd20</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="8.0.0">
+      <Uri>https://github.com/dotnet/extensions</Uri>
+      <Sha>f8ddd93356a1247120436abbfa8f6517dc0fdd20</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.AuditReports" Version="8.0.0">
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>f8ddd93356a1247120436abbfa8f6517dc0fdd20</Sha>
     </Dependency>
