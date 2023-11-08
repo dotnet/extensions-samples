@@ -7,11 +7,14 @@ using static Metrics.Generators.Metric;
 
 namespace Metrics.Generators;
 
+// The structure that contains the metering information about the request.
 internal struct RequestInfo
 {
-    [TagName(Dimensions.Target)]
+    // This annotated property will be used as a tag for the RequestStats histogram.
+    [TagName(Tags.Target)]
     public RequestTarget Target { get; set; }
 
-    [TagName(Dimensions.DayOfWeek)]
+    // This annotated property will be used as a tag for the RequestStats histogram.
+    [TagName(Tags.DayOfWeek)]
     public DayOfWeek DayOfWeek { get; set; }
 }

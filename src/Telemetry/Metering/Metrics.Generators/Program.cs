@@ -12,6 +12,7 @@ internal static class Startup
 {
     public static void Main()
     {
+        // This sample application demonstrates writing metrics based on the auto-generated code.
         Task.Run(async () =>
         {
             using var telemetryEmitter = new TelemetryEmitter();
@@ -37,6 +38,8 @@ internal static class Startup
                 try
                 {
                     Console.WriteLine($"Sending request to ${targetUrl}...");
+
+                    // Record the 'sample.total_requests' counter metric.
                     telemetryEmitter.RecordRequest(target);
 
                     var response = await httpClient.GetAsync(targetUrl).ConfigureAwait(false);
@@ -45,6 +48,7 @@ internal static class Startup
                     {
                         var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
+                        // Record the 'sample.request_stats' histogram metric.
                         telemetryEmitter.RecordRequestStats(
                             content.Length,
                             new RequestInfo
@@ -55,11 +59,13 @@ internal static class Startup
                     }
                     else
                     {
+                        // Record the 'sample.failed_requests' counter metric.
                         telemetryEmitter.RecordFailedRequest(target, reason: response.StatusCode.ToString());
                     }
                 }
                 catch (Exception ex)
                 {
+                    // Record the 'sample.failed_requests' counter metric.
                     telemetryEmitter.RecordFailedRequest(target, reason: ex.GetType().Name);
                 }
 

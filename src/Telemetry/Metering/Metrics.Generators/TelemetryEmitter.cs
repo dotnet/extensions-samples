@@ -6,6 +6,7 @@ using System.Diagnostics.Metrics;
 
 namespace Metrics.Generators;
 
+// The utility class that records all metrics recorded by the application.
 internal sealed class TelemetryEmitter : IDisposable
 {
     public Meter _meter;
@@ -17,6 +18,7 @@ internal sealed class TelemetryEmitter : IDisposable
     {
         _meter = new Meter(nameof(TelemetryEmitter));
 
+        // Create metering instruments using the auto-generated code:
         _requestsStatsHistogram = Metric.CreateRequestStatsHistogram(_meter);
         _totalRequestCounter = Metric.CreateTotalRequestCounter(_meter);
         _failedRequestCounter = Metric.CreateFailedRequestCounter(_meter);
