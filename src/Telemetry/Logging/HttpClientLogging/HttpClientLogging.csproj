@@ -7,11 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\Shared\Compliance\DataTaxonomy.cs" Link="Compliance\DataTaxonomy.cs" />
-    <Compile Include="..\Shared\Compliance\StarRedactor.cs" Link="Compliance\StarRedactor.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="$(MicrosoftExtensionsComplianceRedactionVersion)" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="$(MicrosoftExtensionsLoggingConsoleVersion)" />
     <PackageReference Include="Microsoft.Extensions.Http.Diagnostics" Version="$(MicrosoftExtensionsHttpDiagnosticsVersion)" />
@@ -22,10 +17,6 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Compliance\" />
   </ItemGroup>
 
 </Project>
