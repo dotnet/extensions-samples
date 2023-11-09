@@ -11,7 +11,7 @@
     </Dependency>
     <Dependency Name="Microsoft.Extensions.Diagnostics" Version="8.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
-      <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
+      <Sha>c88b3776d0fb3bb33fcd4192b476147c0895bd6f</Sha>
     </Dependency>
     <Dependency Name="Microsoft.Extensions.Logging.Console" Version="8.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
@@ -49,7 +49,7 @@
     </Dependency>
     <Dependency Name="Microsoft.Extensions.Telemetry" Version="8.0.0">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>38d7fb376f0a193508de0f0d1e06f9f181959714</Sha>
+      <Sha>f8ddd93356a1247120436abbfa8f6517dc0fdd20</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>

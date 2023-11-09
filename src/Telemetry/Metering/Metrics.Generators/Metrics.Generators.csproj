@@ -4,13 +4,18 @@
     <Description>Demonstrates how to emit application metrics.</Description>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
+    <!-- This activates metrics report generator -->
     <GenerateMetricsReport>true</GenerateMetricsReport>
-    <MetricsReportOutputPath>$(MSBuildThisFileDirectory)</MetricsReportOutputPath>
+    <!-- Specify where the MetricReport.json file should be created -->
+    <MetricsReportOutputPath>$(OutDir)</MetricsReportOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Diagnostics" Version="$(MicrosoftExtensionsDiagnosticsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(MicrosoftExtensionsHostingVersion)" />
+    <!-- This package should be referenced for metrics code generator -->
     <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
+    <!-- This package should be referenced for metrics usage report generator -->
     <PackageReference Include="Microsoft.Extensions.AuditReports" Version="$(MicrosoftExtensionsAuditReportsVersion)" />
   </ItemGroup>
 

@@ -11,16 +11,17 @@ namespace Metrics.Generators;
 // The utility class that prints to the console all metrics recorded by the application.
 internal sealed class ConsoleMetricWriter : IDisposable
 {
-    public MeterListener _meterListener;
+    private readonly MeterListener _meterListener;
 
     public ConsoleMetricWriter()
     {
-        _meterListener = new();
-        _meterListener.InstrumentPublished = (instrument, listener) =>
+        _meterListener = new()
         {
-            listener.SetMeasurementEventCallback<int>(PrintMeasurement);
-            listener.SetMeasurementEventCallback<long>(PrintMeasurement);
-            listener.EnableMeasurementEvents(instrument);
+            InstrumentPublished = (instrument, listener) =>
+            {
+                listener.SetMeasurementEventCallback<long>(PrintMeasurement);
+                listener.EnableMeasurementEvents(instrument);
+            }
         };
         _meterListener.Start();
     }
