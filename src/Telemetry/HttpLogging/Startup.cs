@@ -35,8 +35,8 @@ internal sealed class Startup
             // the path will contain actual values of route parameters.
             options.RequestPathLoggingMode = IncomingPathLoggingMode.Formatted;
 
-            // Here we specify how to treat HTTP route parameters. "Strict" means that all route
-            // are considered as sensitive, hence their values will be redacted/erased by default.
+            // Here we specify how to treat HTTP route parameters.
+            // "Strict" means that all route parameters are considered as sensitive.
             options.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.Strict;
 
             // Here we specify which HTTP paths we want to exclude from logging.
