@@ -39,6 +39,7 @@
     <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0</MicrosoftExtensionsDiagnosticsTestingVersion>
     <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0</MicrosoftExtensionsTelemetryAbstractionsVersion>
     <MicrosoftExtensionsTelemetryVersion>8.0.0</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>8.0.0</MicrosoftExtensionsHttpDiagnosticsVersion>
   </PropertyGroup>
   <!--
 

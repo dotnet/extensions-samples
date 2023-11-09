@@ -43,6 +43,10 @@
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>35e5d04e1f6cd80c85f50063856fcfc66f8a5051</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="8.0.0">
+      <Uri>https://github.com/dotnet/extensions</Uri>
+      <Sha>35e5d04e1f6cd80c85f50063856fcfc66f8a5051</Sha>
+    </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
     <Dependency Name="Microsoft.DotNet.Arcade.Sdk" Version="8.0.0-beta.23525.4">
