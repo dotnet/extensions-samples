@@ -30,7 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LatencyMeasurement", "Laten
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LatencyContext", "src\Telemetry\LatencyMeasurement\LatencyContext\LatencyContext.csproj", "{F8A03BBA-9846-4C9B-A4BE-9CBE8B416974}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpLogging", "src\Telemetry\HttpLoggingMiddleware\HttpLogging.csproj", "{21D16F5F-6C5E-40C5-8506-B7ECBA75F049}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpLogging", "src\Telemetry\HttpLogging\HttpLogging.csproj", "{21D16F5F-6C5E-40C5-8506-B7ECBA75F049}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpLogging", "HttpLogging", "{BAD004CE-69EC-4DA4-BDA8-9637EC662C9C}"
 EndProject
