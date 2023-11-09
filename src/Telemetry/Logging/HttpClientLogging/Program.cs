@@ -9,8 +9,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Compliance.Redaction;
-using HttpClientLogging;
 using System.Net.Mime;
+using Shared.Compliance;
 
 var builder = Host.CreateApplicationBuilder(args);
 
@@ -20,7 +20,9 @@ builder.Logging.AddJsonConsole(x =>
     x.JsonWriterOptions = new() { Indented = true };
 });
 
-// We need to configure redaction to redact any sensitive data:
+// We need to register a redactor that will handle all sensitive data.
+// Here for the sake of showing redaction functionality we use "StarRedactor" and "NullRedactor" redactors.
+// In a real world scenario you would use the one that suits your needs (e.g. HMAC redactor).
 builder.Services.AddRedaction(x =>
 {
     // We don't redact any values that aren't sensitive:

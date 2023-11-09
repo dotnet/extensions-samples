@@ -3,7 +3,7 @@
 
 using Microsoft.Extensions.Compliance.Classification;
 
-namespace HttpClientLogging;
+namespace Shared.Compliance;
 
 internal static class DataTaxonomy
 {
