@@ -3,11 +3,11 @@
 
 using System;
 using System.Text.Json;
-using ComplexObjectLogging.Compliance;
 using ComplexObjectLogging.Models;
 using Microsoft.Extensions.Compliance.Classification;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Shared.Compliance;
 
 namespace ComplexObjectLogging;
 
@@ -36,7 +36,7 @@ internal static class Program
                 // We need to register the redactor that will handle all sensitive data.
                 // Here we use the "StarRedactor" which replaces the sensitive data with asterisks.
                 // In a real world scenario you would use the one that suits your needs (e.g. HMAC redactor).
-                builder.Services.AddRedaction(x => x.SetRedactor<StarRedactor>(new DataClassificationSet(DataTaxonomy.Classification)));
+                builder.Services.AddRedaction(x => x.SetRedactor<StarRedactor>(new DataClassificationSet(DataTaxonomy.PrivateData)));
             });
 
         var logger = loggerFactory.CreateLogger("MyDemoLogger");

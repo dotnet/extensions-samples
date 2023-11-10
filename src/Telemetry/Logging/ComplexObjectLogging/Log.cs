@@ -2,9 +2,9 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System.Collections.Generic;
-using ComplexObjectLogging.Compliance;
 using ComplexObjectLogging.Models;
 using Microsoft.Extensions.Logging;
+using Shared.Compliance;
 
 namespace ComplexObjectLogging;
 
