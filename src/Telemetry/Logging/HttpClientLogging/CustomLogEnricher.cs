@@ -6,7 +6,7 @@ using System.Net.Http;
 using Microsoft.Extensions.Diagnostics.Enrichment;
 using Microsoft.Extensions.Http.Logging;
 
-// A custom log enricher that adds custom tags to HttpClient logs.
+// A custom log enricher that adds tags to HttpClient logs.
 // An enricher should implement IHttpClientLogEnricher.
 internal sealed class CustomLogEnricher : IHttpClientLogEnricher
 {
