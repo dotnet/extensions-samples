@@ -32,14 +32,14 @@
     <!-- dotnet/aspnetcore -->
     <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.0-alpha.1.23557.6</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.0.0-alpha.1.23559.2</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAmbientMetadataApplicationVersion>9.0.0-alpha.1.23559.2</MicrosoftExtensionsAmbientMetadataApplicationVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>9.0.0-alpha.1.23559.2</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>9.0.0-alpha.1.23559.2</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.0.0-alpha.1.23559.2</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.1.0-preview.23559.3</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAmbientMetadataApplicationVersion>8.1.0-preview.23559.3</MicrosoftExtensionsAmbientMetadataApplicationVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.1.0-preview.23559.3</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>8.1.0-preview.23559.3</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.1.0-preview.23559.3</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
     <MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>9.0.0-alpha.1.23558.6</MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>
     <MicrosoftExtensionsDiagnosticsExtraVersion>9.0.0-alpha.1.23558.6</MicrosoftExtensionsDiagnosticsExtraVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>9.0.0-alpha.1.23559.2</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>8.1.0-preview.23559.3</MicrosoftExtensionsDiagnosticsTestingVersion>
   </PropertyGroup>
   <!--
 
