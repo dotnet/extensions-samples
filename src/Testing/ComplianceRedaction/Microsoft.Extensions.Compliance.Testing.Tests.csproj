@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Demonstrates how to use fake redaction types in unit tests.</Description>
+    <Description>Demonstrates how to use Compliance types in unit tests.</Description>
     <OutputType>Library</OutputType>
   </PropertyGroup>
 
