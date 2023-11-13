@@ -32,14 +32,14 @@
     <MicrosoftExtensionsLoggingConsoleVersion>8.0.0</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.0.0</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>8.0.0</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>8.0.0</MicrosoftExtensionsTelemetryVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>8.0.0</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.1.0-preview.23562.3</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.1.0-preview.23562.3</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>8.1.0-preview.23562.3</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.1.0-preview.23562.3</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>8.1.0-preview.23562.3</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.1.0-preview.23562.3</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>8.1.0-preview.23562.3</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>8.1.0-preview.23562.3</MicrosoftExtensionsHttpDiagnosticsVersion>
   </PropertyGroup>
   <!--
 
