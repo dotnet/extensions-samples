@@ -75,7 +75,7 @@ internal sealed class Startup
 
         _ = app.UseEndpoints(endpoints =>
         {
-            _ = endpoints.MapControllers();
+            _ = endpoints.MapDefaultControllerRoute();
         });
     }
 }
