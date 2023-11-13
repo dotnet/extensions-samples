@@ -5,21 +5,24 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
 using System.Net.Http;
+using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 
 namespace Metrics.Generators;
 
-internal sealed class TelemetryEmitterBackgroundService : IHostedService
+internal sealed class TelemetryEmitterBackgroundService : BackgroundService
 {
     private readonly Meter _meter;
     private readonly RequestStatsHistogram _requestsStatsHistogram;
     private readonly TotalRequestCounter _totalRequestCounter;
     private readonly FailedRequestCounter _failedRequestCounter;
+    private readonly PeriodicTimer _timer;
 
     public TelemetryEmitterBackgroundService()
     {
+        _timer = new PeriodicTimer(TimeSpan.FromSeconds(5));
         _meter = new Meter(nameof(TelemetryEmitterBackgroundService));
 
         // Create metering instruments using the auto-generated code:
@@ -28,7 +31,7 @@ internal sealed class TelemetryEmitterBackgroundService : IHostedService
         _failedRequestCounter = Metric.CreateFailedRequestCounter(_meter);
     }
 
-    public Task StartAsync(CancellationToken cancellationToken)
+    protected override Task ExecuteAsync(CancellationToken cancellationToken)
     {
         return Task.Run(async () =>
         {
@@ -43,11 +46,10 @@ internal sealed class TelemetryEmitterBackgroundService : IHostedService
             };
 
             using var httpClient = new HttpClient();
-            var random = new Random((int)DateTimeOffset.UtcNow.Ticks);
 
             while (!cancellationToken.IsCancellationRequested)
             {
-                var index = random.Next(targets.Count);
+                var index = RandomNumberGenerator.GetInt32(0, targets.Count);
                 var target = targets[index].Item1;
                 var targetUrl = targets[index].Item2;
 
@@ -85,15 +87,16 @@ internal sealed class TelemetryEmitterBackgroundService : IHostedService
                     _failedRequestCounter.Add(1, target, ex.GetType().Name);
                 }
 
-                await Task.Delay(5000, cancellationToken).ConfigureAwait(false);
+                await _timer.WaitForNextTickAsync(cancellationToken).ConfigureAwait(false);
             }
         }, cancellationToken);
     }
 
-    public Task StopAsync(CancellationToken cancellationToken)
+    public override void Dispose()
     {
-        _meter.Dispose();
+        base.Dispose();
 
-        return Task.CompletedTask;
+        _timer.Dispose();
+        _meter.Dispose();
     }
 }
