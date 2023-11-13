@@ -1,7 +1,6 @@
 // Licensed to the .NET Foundation under one or more agreements.
 // The .NET Foundation licenses this file to you under the MIT license.
 
-using HttpLogging.Compliance;
 using HttpLogging.Enrichment;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.Logging;
@@ -10,6 +9,7 @@ using Microsoft.Extensions.Compliance.Redaction;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Http.Diagnostics;
 using Microsoft.Net.Http.Headers;
+using Shared.Compliance;
 
 namespace HttpLogging;
 
