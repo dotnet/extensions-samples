@@ -8,6 +8,7 @@ trigger:
     include:
     - release/*
     - main
+    - dev
   paths:
     include:
     - '*'
@@ -27,6 +28,7 @@ pr:
     include:
     - release/*
     - main
+    - dev
   paths:
     include:
     - '*'
