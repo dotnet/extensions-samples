@@ -4,8 +4,9 @@
 using System;
 using Microsoft.Extensions.Compliance.Redaction;
 
-namespace ComplexObjectLogging.Compliance;
+namespace Shared.Compliance;
 
+// The implementation below is intended for demonstration purposes only and should NOT be used in production environments
 internal sealed class StarRedactor : Redactor
 {
     private const char Replacement = '*';

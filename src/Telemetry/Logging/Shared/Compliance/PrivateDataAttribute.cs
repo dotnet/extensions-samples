@@ -4,13 +4,13 @@
 using System;
 using Microsoft.Extensions.Compliance.Classification;
 
-namespace ComplexObjectLogging.Compliance;
+namespace Shared.Compliance;
 
 [AttributeUsage(AttributeTargets.Property | AttributeTargets.Parameter)]
 internal sealed class PrivateDataAttribute : DataClassificationAttribute
 {
     public PrivateDataAttribute()
-        : base(DataTaxonomy.Classification)
+        : base(DataTaxonomy.PrivateData)
     {
     }
 }

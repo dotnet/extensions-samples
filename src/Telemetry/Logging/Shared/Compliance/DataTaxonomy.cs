@@ -3,9 +3,11 @@
 
 using Microsoft.Extensions.Compliance.Classification;
 
-namespace ComplexObjectLogging.Compliance;
+namespace Shared.Compliance;
 
 internal static class DataTaxonomy
 {
-    public static DataClassification Classification => new("ComplianceTaxonomy", "ContosoClassification");
+    public static DataClassification PrivateData => new("ComplianceTaxonomy", "Private");
+
+    public static DataClassification PublicData => new("ComplianceTaxonomy", "Public");
 }
