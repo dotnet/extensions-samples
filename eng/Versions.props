@@ -29,17 +29,19 @@
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>9.0.0-alpha.1.23559.1</MicrosoftBclTimeProviderVersion>
     <MicrosoftExtensionsHostingVersion>9.0.0-alpha.1.23559.1</MicrosoftExtensionsHostingVersion>
-    <MicrosoftExtensionsLoggingConsoleVersion>&gt;9.0.0-alpha.1.23557.1</MicrosoftExtensionsLoggingConsoleVersion>
+    <MicrosoftExtensionsLoggingConsoleVersion>9.0.0-alpha.1.23559.1</MicrosoftExtensionsLoggingConsoleVersion>
+    <MicrosoftNETCoreAppRuntimewinx64Version>9.0.0-alpha.1.23559.1</MicrosoftNETCoreAppRuntimewinx64Version>
     <!-- dotnet/aspnetcore -->
+    <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.0-alpha.1.23559.18</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
     <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.0.0-alpha.1.23562.2</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
     <MicrosoftExtensionsComplianceRedactionVersion>9.0.0-alpha.1.23562.2</MicrosoftExtensionsComplianceRedactionVersion>
     <MicrosoftExtensionsComplianceTestingVersion>9.0.0-alpha.1.23562.2</MicrosoftExtensionsComplianceTestingVersion>
     <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.0.0-alpha.1.23562.2</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
     <MicrosoftExtensionsDiagnosticsTestingVersion>9.0.0-alpha.1.23562.2</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsTelemetryVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>9.0.0-alpha.1.23562.2</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>9.0.0-alpha.1.23562.2</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>9.0.0-alpha.1.23562.2</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 
