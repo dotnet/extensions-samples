@@ -4,6 +4,7 @@
     <Description>Demonstrates how to use complex object logging feature.</Description>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
+    <DisableMicrosoftExtensionsLoggingSourceGenerator>true</DisableMicrosoftExtensionsLoggingSourceGenerator>
 
     <!-- Uncomment this to emit the actual source-generated files under "obj/[Debug|Release]/[net8.0|net6.0]/generated" folder -->
     <!--<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>-->

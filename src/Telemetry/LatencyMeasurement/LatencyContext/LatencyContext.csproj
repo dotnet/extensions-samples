@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>Demonstrates how to use latency context and request latency middleware.</Description>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks> 
+    <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
