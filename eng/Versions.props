@@ -1,11 +1,12 @@
 <Project>
   <PropertyGroup Label="Version settings">
-    <MajorVersion>9</MajorVersion>
+    <MajorVersion>8</MajorVersion>
     <MinorVersion>0</MinorVersion>
     <PatchVersion>0</PatchVersion>
     <!-- version in our package name #.#.#-below.#####.## -->
-    <PreReleaseVersionLabel>alpha</PreReleaseVersionLabel>
-    <PreReleaseVersionIteration>1</PreReleaseVersionIteration>
+    <PreReleaseVersionLabel>rtm</PreReleaseVersionLabel>
+    <PreReleaseVersionIteration>
+    </PreReleaseVersionIteration>
     <VersionPrefix>$(MajorVersion).$(MinorVersion).$(PatchVersion)</VersionPrefix>
     <AssemblyVersion>$(MajorVersion).$(MinorVersion).0.0</AssemblyVersion>
     <ValidateBaseline>true</ValidateBaseline>
@@ -26,20 +27,19 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/runtime -->
-    <MicrosoftBclTimeProviderVersion>9.0.0-alpha.1.23557.1</MicrosoftBclTimeProviderVersion>
-    <MicrosoftExtensionsHostingVersion>9.0.0-alpha.1.23557.1</MicrosoftExtensionsHostingVersion>
-    <MicrosoftNETCoreAppRuntimewinx64Version>9.0.0-alpha.1.23557.1</MicrosoftNETCoreAppRuntimewinx64Version>
+    <MicrosoftBclTimeProviderVersion>8.0.0</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsHostingVersion>8.0.0</MicrosoftExtensionsHostingVersion>
+    <MicrosoftExtensionsLoggingConsoleVersion>8.0.0</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
-    <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.0-alpha.1.23557.6</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.0.0-alpha.1.23558.5</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAmbientMetadataApplicationVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsAmbientMetadataApplicationVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsDiagnosticsExtraAbstractionsVersion>
-    <MicrosoftExtensionsDiagnosticsExtraVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsDiagnosticsExtraVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.0.0</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>8.0.0</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>8.0.0</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>8.0.0</MicrosoftExtensionsHttpDiagnosticsVersion>
   </PropertyGroup>
   <!--
 
