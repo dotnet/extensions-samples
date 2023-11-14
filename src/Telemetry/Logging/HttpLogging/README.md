@@ -21,7 +21,7 @@ The sample exposes a couple of HTTP URLs that demonstrate how extended HTTP logg
 
 Navigate to each of these HTTP URLs and see how extended HTTP logging functionality works.
 
-For more information, see the source of the sample.
+For more information, see the source code of the sample.
 
 Useful links:
 
