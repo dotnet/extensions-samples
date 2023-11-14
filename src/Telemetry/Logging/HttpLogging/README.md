@@ -14,8 +14,8 @@ The sample exposes a couple of HTTP URLs that demonstrate how extended HTTP logg
     * `/api/chats/{chatId}/messages/{messageId}`
     * `/api/chats/{chatId}/attachments/{attachmentId}`
 
-    demonstrate how to redact values of compliance sensitive HTTP route parameters. Also, when you navigate to each of these HTTP URLs,
-    the log message information is enriched with additional data.
+    demonstrate how to redact values of sensitive HTTP route parameters in a compliant manner. Also, when you
+    navigate to each of these HTTP endpoints, the log message information is enriched with additional data.
 
 * HTTP URL `/home/index` demonstrates how to exclude certain HTTP paths from being logged.
 

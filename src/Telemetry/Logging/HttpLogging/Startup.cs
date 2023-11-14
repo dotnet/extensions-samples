@@ -21,7 +21,8 @@ internal sealed class Startup
             .AddRouting()
             .AddControllers();
 
-        // Here we register ASP.NET Core HTTP logging.
+        // Here we register ASP.NET Core HTTP logging. You can configure HTTP logging by
+        // providing a delegate that configures HttpLoggingOptions.
         _ = services.AddHttpLogging(_ => { });
 
         // Here we register HttpLogEnricher to enrich HTTP logs with additional information.

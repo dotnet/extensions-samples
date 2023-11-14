@@ -44,15 +44,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpLogging", "HttpLogging"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HttpLogging", "src\Telemetry\Logging\HttpLogging\HttpLogging.csproj", "{931A6585-1085-4185-AE12-78BBA87F2A73}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{8E389401-C0E0-4E65-BBEE-B589613C332D}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compliance", "Compliance", "{86DE7F98-450F-44D7-A4BA-01E9D54C47F5}"
-	ProjectSection(SolutionItems) = preProject
-		src\Telemetry\Logging\Shared\Compliance\DataTaxonomy.cs = src\Telemetry\Logging\Shared\Compliance\DataTaxonomy.cs
-		src\Telemetry\Logging\Shared\Compliance\PrivateDataAttribute.cs = src\Telemetry\Logging\Shared\Compliance\PrivateDataAttribute.cs
-		src\Telemetry\Logging\Shared\Compliance\StarRedactor.cs = src\Telemetry\Logging\Shared\Compliance\StarRedactor.cs
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -102,8 +93,6 @@ Global
 		{A8922F1D-0A30-45DA-ADD2-927455CB6549} = {01EA865B-B3B0-4A2F-8361-8E59C004653B}
 		{175F98E5-AFE8-4978-A512-EB84AD660208} = {248CB37C-2412-4231-96C0-092413C10D4B}
 		{931A6585-1085-4185-AE12-78BBA87F2A73} = {175F98E5-AFE8-4978-A512-EB84AD660208}
-		{8E389401-C0E0-4E65-BBEE-B589613C332D} = {248CB37C-2412-4231-96C0-092413C10D4B}
-		{86DE7F98-450F-44D7-A4BA-01E9D54C47F5} = {8E389401-C0E0-4E65-BBEE-B589613C332D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6083D400-BF26-4ACE-86A8-778D26A8FA6A}
