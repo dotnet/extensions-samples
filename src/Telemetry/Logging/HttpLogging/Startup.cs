@@ -41,6 +41,7 @@ internal sealed class Startup
             options.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.Strict;
 
             // Here we specify which HTTP paths we want to exclude from logging.
+            // We can exclude, for example, health check endpoints, "favicon.ico", etc.
             options.ExcludePathStartsWith.Add("/home");
 
             // Here we specify data classification for HTTP route parameters:
@@ -74,9 +75,6 @@ internal sealed class Startup
         // as different middlewares may feed HTTP request with data that you want to log.
         _ = app.UseHttpLogging();
 
-        _ = app.UseEndpoints(endpoints =>
-        {
-            _ = endpoints.MapDefaultControllerRoute();
-        });
+        _ = app.UseEndpoints(endpoints => endpoints.MapControllers());
     }
 }

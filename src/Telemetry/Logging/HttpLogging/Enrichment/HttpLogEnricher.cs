@@ -7,10 +7,10 @@ using Microsoft.Extensions.Diagnostics.Enrichment;
 
 namespace HttpLogging.Enrichment;
 
-#pragma warning disable EXTEXP0013 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+#pragma warning disable EXTEXP0013 // Type is for evaluation purposes only and is subject to change or removal in future updates
 // HTTP log enrichers are used to add additional information to the HTTP logs.
 internal sealed class HttpLogEnricher : IHttpLogEnricher
-#pragma warning restore EXTEXP0013 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+#pragma warning restore EXTEXP0013 // Type is for evaluation purposes only and is subject to change or removal in future updates
 {
     public void Enrich(IEnrichmentTagCollector collector, HttpContext httpContext)
     {

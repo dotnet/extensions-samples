@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HttpLogging.Controllers;
 
+[ApiController]
+[Route("[controller]/[action]")]
 public class HomeController : ControllerBase
 {
     // HTTP requests to /home/index will not be logged, because it is excluded from logging
