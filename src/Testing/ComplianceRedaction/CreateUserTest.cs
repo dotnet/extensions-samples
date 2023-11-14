@@ -32,13 +32,12 @@ namespace ComplianceTesting
 
             var handler = new CreateUserHandler(fakeLogger);
             const string Username = "Jan";
-            const int ExpectedRedactedData = 1;
 
             _ = handler.Handle(Username);
 
             // We focus on checking if redaction was performed correctly.
             Assert.Equal(Username, fakeProvider.Collector.LastRedactedData.Original);
-            Assert.Equal(ExpectedRedactedData, fakeProvider.Collector.AllRedactedData.Count);
+            Assert.Single(fakeProvider.Collector.AllRedactedData);
         }
     }
 }
