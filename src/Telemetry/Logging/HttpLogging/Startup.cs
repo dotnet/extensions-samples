@@ -43,6 +43,7 @@ internal sealed class Startup
             // Here we specify which HTTP paths we want to exclude from logging.
             // We can exclude, for example, health check endpoints, "favicon.ico", etc.
             options.ExcludePathStartsWith.Add("/home");
+            options.ExcludePathStartsWith.Add("/favicon.ico");
 
             // Here we specify data classification for HTTP route parameters:
             options.RouteParameterDataClasses.Add("chatId", DataTaxonomy.PrivateData);
