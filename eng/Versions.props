@@ -41,6 +41,7 @@
     <MicrosoftExtensionsTelemetryAbstractionsVersion>8.1.0-preview.23564.2</MicrosoftExtensionsTelemetryAbstractionsVersion>
     <MicrosoftExtensionsTelemetryVersion>8.1.0-preview.23564.2</MicrosoftExtensionsTelemetryVersion>
     <MicrosoftExtensionsHttpDiagnosticsVersion>8.1.0-preview.23564.2</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsAuditReportsVersion>8.1.0-preview.23564.2</MicrosoftExtensionsAuditReportsVersion>
   </PropertyGroup>
   <!--
 
