@@ -50,11 +50,8 @@ variables:
     value: Release
   - name: DOTNET_SKIP_FIRST_TIME_EXPERIENCE
     value: true
-  # TODO: Replace with eq(variables['System.TeamProject'], 'public') once a public project is created
-  #       Treat builds from refs/heads/internal/* branches as the mirror builds, i.e., official; and
-  #       treat all other builds as "public".
   - name: runAsPublic
-    value: true # ${{ and(ne(variables['Build.SourceBranch'], 'refs/heads/main'), not(startsWith(variables['Build.SourceBranch'], 'refs/heads/internal/'))) }}
+    value: ${{ eq(variables['System.TeamProject'], 'public') }}
   - name: _BuildConfig
     value: Release
   - name: Build.Arcade.ArtifactsPath
@@ -93,8 +90,8 @@ stages:
 
         pool:
           ${{ if eq(variables['runAsPublic'], 'true') }}:
-            name: $(DncEngInternalBuildPool)
-            demands: ImageOverride -equals windows.vs2022preview.amd64
+            name: $(DncEngPublicBuildPool)
+            demands: ImageOverride -equals windows.vs2022preview.amd64.open
           # Non-public (i.e., official builds)
           ${{ else }}:
             name: $(DncEngInternalBuildPool)
@@ -122,8 +119,8 @@ stages:
 
         pool:
           ${{ if eq(variables['runAsPublic'], 'true') }}:
-            name: $(DncEngInternalBuildPool)
-            demands: ImageOverride -equals build.ubuntu.2004.amd64
+            name: $(DncEngPublicBuildPool)
+            demands: ImageOverride -equals build.ubuntu.2004.amd64.open
           # Non-public (i.e., official builds)
           ${{ else }}:
             name: $(DncEngInternalBuildPool)
