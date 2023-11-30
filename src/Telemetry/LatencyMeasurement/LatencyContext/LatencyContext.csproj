@@ -4,6 +4,9 @@
     <Description>Demonstrates how to use latency context and request latency middleware.</Description>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks> 
+
+    <!-- Uncomment this to emit the actual source-generated files under "obj/[Debug|Release]/[net8.0|net6.0]/generated" folder -->
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
   </PropertyGroup>
 
   <ItemGroup>
