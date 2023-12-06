@@ -27,16 +27,16 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/runtime -->
-    <MicrosoftBclTimeProviderVersion>>9.0.0-alpha.1.23557.1</MicrosoftBclTimeProviderVersion>
-    <MicrosoftExtensionsHostingVersion>>9.0.0-alpha.1.23557.1</MicrosoftExtensionsHostingVersion>
-    <MicrosoftExtensionsLoggingConsoleVersion>>9.0.0-alpha.1.23557.1</MicrosoftExtensionsLoggingConsoleVersion>
+    <MicrosoftBclTimeProviderVersion>9.0.0-alpha.1.23603.1</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsHostingVersion>9.0.0-alpha.1.23603.1</MicrosoftExtensionsHostingVersion>
+    <MicrosoftExtensionsLoggingConsoleVersion>&gt;9.0.0-alpha.1.23557.1</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.0.0-alpha.1.23558.5</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.0.0-alpha.1.23605.2</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>9.0.0-alpha.1.23605.2</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>9.0.0-alpha.1.23605.2</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.0.0-alpha.1.23605.2</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>9.0.0-alpha.1.23605.2</MicrosoftExtensionsDiagnosticsTestingVersion>
     <MicrosoftExtensionsTelemetryAbstractionsVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsTelemetryAbstractionsVersion>
     <MicrosoftExtensionsTelemetryVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsTelemetryVersion>
     <MicrosoftExtensionsHttpDiagnosticsVersion>9.0.0-alpha.1.23558.5</MicrosoftExtensionsHttpDiagnosticsVersion>
