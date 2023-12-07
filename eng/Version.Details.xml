@@ -23,6 +23,10 @@
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>ca03b0c72858567f9b668d90fee32ef2d5d8dd74</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.Extensions.AuditReports" Version="8.1.0-preview.23604.1">
+      <Uri>https://github.com/dotnet/extensions</Uri>
+      <Sha>ca03b0c72858567f9b668d90fee32ef2d5d8dd74</Sha>
+    </Dependency>
     <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.1.0-preview.23604.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>ca03b0c72858567f9b668d90fee32ef2d5d8dd74</Sha>
