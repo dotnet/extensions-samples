@@ -5,6 +5,10 @@
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>f97fc89e337d816439dd324ad3f55c55f1de93b5</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.Extensions.Diagnostics" Version="9.0.0-alpha.1.23605.1" CoherentParentDependency="Microsoft.Extensions.Compliance.Redaction">
+      <Uri>https://github.com/dotnet/runtime</Uri>
+      <Sha>f97fc89e337d816439dd324ad3f55c55f1de93b5</Sha>
+    </Dependency>
     <Dependency Name="Microsoft.Extensions.Hosting" Version="9.0.0-alpha.1.23605.1" CoherentParentDependency="Microsoft.Extensions.Compliance.Redaction">
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>f97fc89e337d816439dd324ad3f55c55f1de93b5</Sha>
@@ -28,6 +32,10 @@
     </Dependency>
     <!-- dotnet/extensions -->
     <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.0.0-alpha.1.23606.2">
+      <Uri>https://github.com/dotnet/extensions</Uri>
+      <Sha>6fda62bb10fe8af631ababf5699825a38b6b49e3</Sha>
+    </Dependency>
+    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.0.0-alpha.1.23606.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>6fda62bb10fe8af631ababf5699825a38b6b49e3</Sha>
     </Dependency>

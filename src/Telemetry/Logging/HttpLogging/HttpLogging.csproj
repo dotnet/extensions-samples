@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to use HTTP logging enrichment and redaction.</Description>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>$(LatestTargetFramework)</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.Middleware" Version="$(MicrosoftAspNetCoreDiagnosticsMiddlewareVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="$(MicrosoftExtensionsComplianceRedactionVersion)" />
+  </ItemGroup>
+
+</Project>
