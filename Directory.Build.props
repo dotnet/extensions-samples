@@ -23,7 +23,7 @@
   <PropertyGroup>
     <!-- The latest TFM we're targeting overall -->
     <LatestTargetFramework>net$(MajorVersion).$(MinorVersion)</LatestTargetFramework>
-    <NetCoreTargetFrameworks>$(LatestTargetFramework);net6.0</NetCoreTargetFrameworks>
+    <NetCoreTargetFrameworks>$(LatestTargetFramework);net8.0</NetCoreTargetFrameworks>
 
     <!-- All the .NET TFMs we're building -->
     <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
