@@ -5,8 +5,8 @@ namespace Metrics.Generators;
 
 internal enum RequestTarget
 {
-    MicrosoftDotCom,
-    GitHubDotCom,
-    LinkedInDotCom,
+    Microsoft,
+    GitHub,
+    LinkedIn,
     Invalid,
 }

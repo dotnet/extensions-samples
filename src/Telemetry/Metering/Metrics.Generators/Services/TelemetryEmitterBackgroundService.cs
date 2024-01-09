@@ -31,65 +31,63 @@ internal sealed class TelemetryEmitterBackgroundService : BackgroundService
         _failedRequestCounter = Metric.CreateFailedRequestCounter(_meter);
     }
 
-    protected override Task ExecuteAsync(CancellationToken cancellationToken)
+    protected override async Task ExecuteAsync(CancellationToken cancellationToken)
     {
-        return Task.Run(async () =>
+        await Task.Yield();
+
+        using var consoleMetricWriter = new ConsoleMetricWriter();
+
+        var targets = new List<(RequestTarget target, string url)>
         {
-            using var consoleMetricWriter = new ConsoleMetricWriter();
+            new (RequestTarget.Microsoft, "https://microsoft.com"),
+            new (RequestTarget.GitHub, "https://github.com"),
+            new (RequestTarget.LinkedIn, "https://linkedin.com"),
+            new (RequestTarget.Invalid, "invalid_url"),
+        };
 
-            var targets = new List<(RequestTarget, string)>
+        using var httpClient = new HttpClient();
+
+        while (!cancellationToken.IsCancellationRequested)
+        {
+            var index = RandomNumberGenerator.GetInt32(targets.Count);
+            var (target, targetUrl) = targets[index];
+
+            try
             {
-                new (RequestTarget.MicrosoftDotCom, "https://microsoft.com"),
-                new (RequestTarget.GitHubDotCom, "https://github.com"),
-                new (RequestTarget.LinkedInDotCom, "https://linkedin.com"),
-                new (RequestTarget.Invalid, "invalid_url"),
-            };
+                Console.WriteLine($"{Environment.NewLine}Sending request to {targetUrl}...");
 
-            using var httpClient = new HttpClient();
+                // Record the 'sample.total_requests' counter metric.
+                _totalRequestCounter.Add(1, target);
 
-            while (!cancellationToken.IsCancellationRequested)
-            {
-                var index = RandomNumberGenerator.GetInt32(0, targets.Count);
-                var target = targets[index].Item1;
-                var targetUrl = targets[index].Item2;
+                using var response = await httpClient.GetAsync(targetUrl, cancellationToken).ConfigureAwait(false);
 
-                try
+                if (response.IsSuccessStatusCode)
                 {
-                    Console.WriteLine($"{Environment.NewLine}Sending request to ${targetUrl}...");
+                    var content = await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
 
-                    // Record the 'sample.total_requests' counter metric.
-                    _totalRequestCounter.Add(1, target);
-
-                    var response = await httpClient.GetAsync(targetUrl, cancellationToken).ConfigureAwait(false);
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        var content = await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
-
-                        // Record the 'sample.request_stats' histogram metric.
-                        _requestsStatsHistogram.Record(
-                            content.Length,
-                            new RequestInfo
-                            {
-                                Target = target,
-                                DayOfWeek = DateTimeOffset.UtcNow.DayOfWeek
-                            });
-                    }
-                    else
-                    {
-                        // Record the 'sample.failed_requests' counter metric.
-                        _failedRequestCounter.Add(1, target, response.StatusCode.ToString());
-                    }
+                    // Record the 'sample.request_stats' histogram metric.
+                    _requestsStatsHistogram.Record(
+                        content.Length,
+                        new RequestInfo
+                        {
+                            Target = target,
+                            DayOfWeek = DateTimeOffset.UtcNow.DayOfWeek.ToString()
+                        });
                 }
-                catch (Exception ex)
+                else
                 {
                     // Record the 'sample.failed_requests' counter metric.
-                    _failedRequestCounter.Add(1, target, ex.GetType().Name);
+                    _failedRequestCounter.Add(1, target, response.StatusCode.ToString());
                 }
-
-                await _timer.WaitForNextTickAsync(cancellationToken).ConfigureAwait(false);
             }
-        }, cancellationToken);
+            catch (Exception ex)
+            {
+                // Record the 'sample.failed_requests' counter metric.
+                _failedRequestCounter.Add(1, target, ex.GetType().Name);
+            }
+
+            await _timer.WaitForNextTickAsync(cancellationToken).ConfigureAwait(false);
+        }
     }
 
     public override void Dispose()

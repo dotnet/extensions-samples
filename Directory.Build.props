@@ -28,7 +28,7 @@
     <!-- All the .NET TFMs we're building -->
     <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
     <TargetFrameworks Condition=" '$(IsWindowsBuild)' == 'true' ">$(NetCoreTargetFrameworks);net462</TargetFrameworks>
- 
+
     <!-- All the .NET TFMs we're testing against -->
     <TestNetCoreTargetFrameworks>$(NetCoreTargetFrameworks)</TestNetCoreTargetFrameworks>
     <TestNetCoreTargetFrameworks Condition=" '$(IsWindowsBuild)' == 'true' ">$(TestNetCoreTargetFrameworks);net462</TestNetCoreTargetFrameworks>
