@@ -16,16 +16,14 @@ var builder = Host.CreateApplicationBuilder(args);
 
 // We add JSON console logging to see all tags in the log output:
 builder.Logging.AddJsonConsole(x =>
-{
-    x.JsonWriterOptions = new() { Indented = true };
-});
+    x.JsonWriterOptions = new() { Indented = true });
 
 // We need to register a redactor that will handle all sensitive data.
 // Here for the sake of showing redaction functionality we use "StarRedactor" and "NullRedactor" redactors.
 // In a real world scenario you would use the one that suits your needs (e.g. HMAC redactor).
 builder.Services.AddRedaction(x =>
 {
-    // We don't redact any values that aren't sensitive:
+    // We don't redact values that aren't sensitive:
     x.SetRedactor<NullRedactor>(DataTaxonomy.PublicData);
 
     // All sensitive data gets replaced with asterisks:
@@ -49,6 +47,13 @@ httpClientBuilder.AddExtendedHttpClientLogging(options =>
     // We can also configure the logging for specific request and response headers:
     options.RequestHeadersDataClasses.Add("Accept", DataTaxonomy.PublicData);
     options.ResponseHeadersDataClasses.Add("Server", DataTaxonomy.PublicData);
+
+    // If you want to log content headers, you need to enable the corresponding option.
+    // The API is experimental, thus you need to explicitly acknowledge that.
+#pragma warning disable EXTEXP0003
+    options.LogContentHeaders = true;
+    options.ResponseHeadersDataClasses.Add("Content-Length", DataTaxonomy.PublicData);
+#pragma warning restore EXTEXP0003
 });
 
 // We can also add a custom log enricher to augment all HttpClient logs:
