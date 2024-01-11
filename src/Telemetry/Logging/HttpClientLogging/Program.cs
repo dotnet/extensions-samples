@@ -40,7 +40,8 @@ var httpClientBuilder = builder.Services.AddHttpClient("MyNamedClient");
 // We add the logging to the named HttpClient and configure it via action:
 httpClientBuilder.AddExtendedHttpClientLogging(options =>
 {
-    // In Formatted mode all request path parameters aren't logged as separate tags:
+    // In Formatted mode all request path parameters are logged as part of HTTP URL path.
+    // If you use Structured mode they will be logged as separate tags and the HTTP URL will contain the HTTP request route.
     options.RequestPathLoggingMode = OutgoingPathLoggingMode.Formatted;
     options.RouteParameterDataClasses.Add("userId", DataTaxonomy.PrivateData);
     options.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.Loose;
