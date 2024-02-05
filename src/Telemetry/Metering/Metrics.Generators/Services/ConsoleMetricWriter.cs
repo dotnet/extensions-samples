@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Metrics.Generators;
 
-// The utility class that prints to the console all metrics recorded by the application.
+// The utility class that prints to the console metrics emitted by the application.
 internal sealed class ConsoleMetricWriter : IDisposable
 {
     private readonly MeterListener _meterListener;
@@ -19,10 +19,18 @@ internal sealed class ConsoleMetricWriter : IDisposable
         {
             InstrumentPublished = (instrument, listener) =>
             {
-                listener.SetMeasurementEventCallback<long>(PrintMeasurement);
+                // You can remove this check if you want to see all metrics (e.g. HttpClient metrics).
+                if (instrument.Meter.Name is not nameof(TelemetryEmitterBackgroundService))
+                {
+                    return;
+                }
+
                 listener.EnableMeasurementEvents(instrument);
             }
         };
+
+        _meterListener.SetMeasurementEventCallback<long>(PrintMeasurement);
+
         _meterListener.Start();
     }
 

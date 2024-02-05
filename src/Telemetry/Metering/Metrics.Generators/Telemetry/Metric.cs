@@ -24,12 +24,6 @@ internal sealed partial class Metric
         public const string DayOfWeek = nameof(DayOfWeek);
     }
 
-    // This shows how to define a histogram metric with tags based on the RequestInfo type.
-    // All tags for this metric will be automatically generated from the the properties
-    // of the RequestInfo type which are annotated with the [TagName] attribute.
-    [Histogram(typeof(RequestInfo), Name = MetricNames.RequestStats)]
-    public static partial RequestStatsHistogram CreateRequestStatsHistogram(Meter meter);
-
     // This shows how to define a counter metric with a single tag.
     [Counter(Tags.Target, Name = MetricNames.TotalRequests)]
     public static partial TotalRequestCounter CreateTotalRequestCounter(Meter meter);
@@ -37,4 +31,10 @@ internal sealed partial class Metric
     // This shows how to define a counter metric with two tags.
     [Counter(Tags.Target, Tags.FailureReason, Name = MetricNames.FailedRequests)]
     public static partial FailedRequestCounter CreateFailedRequestCounter(Meter meter);
+
+    // This shows how to define a histogram metric with tags based on the RequestInfo type.
+    // All tags for this metric will be automatically generated from the the properties
+    // of the RequestInfo type which are annotated with the [TagName] attribute.
+    [Histogram(typeof(RequestInfo), Name = MetricNames.RequestStats)]
+    public static partial RequestStatsHistogram CreateRequestStatsHistogram(Meter meter);
 }
