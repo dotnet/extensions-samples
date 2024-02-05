@@ -339,7 +339,6 @@ function InitializeBuildTool {
   # use override if it exists - commonly set by source-build
   if [[ "${_OverrideArcadeInitializeBuildToolFramework:-x}" == "x" ]]; then
     _InitializeBuildToolFramework="net9.0"
-    _InitializeBuildToolFramework="net8.0"
   else
     _InitializeBuildToolFramework="${_OverrideArcadeInitializeBuildToolFramework}"
   fi
