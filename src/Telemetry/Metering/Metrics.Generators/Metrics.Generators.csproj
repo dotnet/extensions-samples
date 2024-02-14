@@ -4,10 +4,10 @@
     <Description>Demonstrates how to emit application metrics.</Description>
     <OutputType>Exe</OutputType>
     <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
-    
+
     <!-- This property is used to control whether metrics report generator kicks in -->
     <!--<GenerateMetricsReport>true</GenerateMetricsReport>-->
-    
+
     <!-- Optionally you can control where the MetricReport.json file should be created -->
     <!--<MetricsReportOutputPath>$(OutDir)</MetricsReportOutputPath>-->
   </PropertyGroup>
