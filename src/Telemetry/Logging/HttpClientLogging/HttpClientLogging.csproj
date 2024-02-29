@@ -3,7 +3,6 @@
   <PropertyGroup>
     <Description>Demonstrates how to use HttpClient logging feature.</Description>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>$(NetCoreTargetFrameworks)</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>

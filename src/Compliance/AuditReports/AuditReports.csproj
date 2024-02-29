@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to leverage AuditReports feature.</Description>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Compliance.Abstractions" Version="$(MicrosoftExtensionsComplianceAbstractionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.AuditReports" Version="$(MicrosoftExtensionsAuditReportsVersion)" />
+  </ItemGroup>
+
+</Project>

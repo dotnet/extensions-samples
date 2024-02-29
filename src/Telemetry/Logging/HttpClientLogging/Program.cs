@@ -9,7 +9,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Compliance.Redaction;
-using System.Net.Mime;
 using Shared.Compliance;
 
 var builder = Host.CreateApplicationBuilder(args);
@@ -80,7 +79,7 @@ using (var httpClient = httpClientFactory.CreateClient("MyNamedClient"))
 static async Task SendRequestAsync(HttpClient httpClient)
 {
     using var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://api.github.com/users/aspnet/repos");
-    requestMessage.Headers.Accept.Add(new(MediaTypeNames.Application.Json));
+    requestMessage.Headers.Accept.Add(new("application/json"));
     requestMessage.Headers.UserAgent.Add(new("HttpClientLoggingSample", productVersion: null));
 
     var requestMetadata = new RequestMetadata()
