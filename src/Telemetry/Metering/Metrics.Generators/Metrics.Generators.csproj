@@ -8,8 +8,8 @@
     <!-- This property is used to control whether metrics report generator kicks in -->
     <!--<GenerateMetricsReport>true</GenerateMetricsReport>-->
 
-    <!-- Optionally you can control where the MetricReport.json file should be created -->
-    <!--<MetricsReportOutputPath>$(OutDir)</MetricsReportOutputPath>-->
+    <!-- Optionally you can control where the "MetricReport.json" file should be created -->
+    <!--<MetricsReportOutputPath>$(ProjectDir)$(OutputPath)</MetricsReportOutputPath>-->
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,7 +17,7 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(MicrosoftExtensionsHostingVersion)" />
     <!-- This package should be referenced for metrics code generator -->
     <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
-    <!-- This package should be referenced for metrics usage report generator -->
+    <!-- This package should be referenced for metrics report generator -->
     <PackageReference Include="Microsoft.Extensions.AuditReports" Version="$(MicrosoftExtensionsAuditReportsVersion)" />
   </ItemGroup>
 

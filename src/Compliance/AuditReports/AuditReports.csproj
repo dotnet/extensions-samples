@@ -3,6 +3,12 @@
   <PropertyGroup>
     <Description>Demonstrates how to leverage AuditReports feature.</Description>
     <OutputType>Exe</OutputType>
+
+    <!-- This property is used to control whether compliance report generator kicks in -->
+    <!--<GenerateComplianceReport>true</GenerateComplianceReport>-->
+
+    <!-- Optionally you can control where the "ComplianceReport.json" file should be created -->
+    <!--<ComplianceReportOutputPath>$(ProjectDir)$(OutputPath)</ComplianceReportOutputPath>-->
   </PropertyGroup>
 
   <ItemGroup>
