@@ -35,6 +35,7 @@
     <!-- dotnet/extensions -->
     <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.3.0-preview.24129.4</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
     <MicrosoftExtensionsAuditReportsVersion>8.3.0-preview.24129.4</MicrosoftExtensionsAuditReportsVersion>
+    <MicrosoftExtensionsComplianceAbstractionsVersion>8.3.0-preview.24129.4</MicrosoftExtensionsComplianceAbstractionsVersion>
     <MicrosoftExtensionsComplianceRedactionVersion>8.3.0-preview.24129.4</MicrosoftExtensionsComplianceRedactionVersion>
     <MicrosoftExtensionsComplianceTestingVersion>8.3.0-preview.24129.4</MicrosoftExtensionsComplianceTestingVersion>
     <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.3.0-preview.24129.4</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>

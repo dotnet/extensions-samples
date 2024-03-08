@@ -21,7 +21,7 @@ internal static partial class Log
     [LoggerMessage(Level = LogLevel.Information, Message = "Data frame was sent")]
     public static partial void DataFrameSent(
         ILogger logger,
-        [TagProvider(typeof(DataFrameTagProvider), nameof(DataFrameTagProvider.Provide), OmitReferenceName = true)] DataFrame dataFrame);
+        [TagProvider(typeof(DataFrameTagProvider), nameof(DataFrameTagProvider.Provide), OmitReferenceName = true)] in DataFrame dataFrame);
 
     // This overload shows how to log an enumerable:
     // Please note that "ILogger" parameter is nullable, the generated implementation won't throw if it is null.
