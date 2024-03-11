@@ -9,7 +9,7 @@ using System.IO;
 const string ReportLocation = "./";
 const string ComplianceReportFileName = "ComplianceReport.json";
 
-Console.WriteLine("Starting AuditReports with arguments: " + string.Join(";", args));
+Console.WriteLine($"Starting AuditReports with arguments: {string.Join(";", args)}");
 
 CheckReport(ComplianceReportFileName);
 
