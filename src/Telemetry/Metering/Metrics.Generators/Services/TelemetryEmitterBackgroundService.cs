@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
 using System.Net.Http;
-using System.Security.Cryptography;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
@@ -18,11 +17,11 @@ internal sealed class TelemetryEmitterBackgroundService : BackgroundService
     private readonly RequestStatsHistogram _requestsStatsHistogram;
     private readonly TotalRequestCounter _totalRequestCounter;
     private readonly FailedRequestCounter _failedRequestCounter;
-    private readonly PeriodicTimer _timer;
+    private readonly TimeSpan _delay = TimeSpan.FromSeconds(5);
+    private readonly Random _random = new Random();
 
     public TelemetryEmitterBackgroundService()
     {
-        _timer = new PeriodicTimer(TimeSpan.FromSeconds(5));
         _meter = new Meter(nameof(TelemetryEmitterBackgroundService));
 
         // Create metering instruments using the auto-generated code:
@@ -49,7 +48,7 @@ internal sealed class TelemetryEmitterBackgroundService : BackgroundService
 
         while (!cancellationToken.IsCancellationRequested)
         {
-            var index = RandomNumberGenerator.GetInt32(targets.Count);
+            var index = _random.Next(targets.Count);
             var (target, targetUrl) = targets[index];
 
             try
@@ -63,7 +62,11 @@ internal sealed class TelemetryEmitterBackgroundService : BackgroundService
 
                 if (response.IsSuccessStatusCode)
                 {
+#if NETFRAMEWORK
+                    var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+#else
                     var content = await response.Content.ReadAsStringAsync(cancellationToken).ConfigureAwait(false);
+#endif
 
                     // Record the 'sample.request_stats' histogram metric.
                     _requestsStatsHistogram.Record(
@@ -86,7 +89,7 @@ internal sealed class TelemetryEmitterBackgroundService : BackgroundService
                 _failedRequestCounter.Add(1, target, ex.GetType().Name);
             }
 
-            await _timer.WaitForNextTickAsync(cancellationToken).ConfigureAwait(false);
+            await Task.Delay(_delay, cancellationToken).ConfigureAwait(false);
         }
     }
 
@@ -94,7 +97,6 @@ internal sealed class TelemetryEmitterBackgroundService : BackgroundService
     {
         base.Dispose();
 
-        _timer.Dispose();
         _meter.Dispose();
     }
 }

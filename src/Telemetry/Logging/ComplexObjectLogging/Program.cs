@@ -40,10 +40,10 @@ internal static class Program
             });
 
         var logger = loggerFactory.CreateLogger("MyDemoLogger");
+        
+        Log.StartingUp(logger, new StartupAttributes(Environment.MachineName, nameof(ComplexObjectLogging)));
 
-        Log.StartingUp(logger, new StartupAttributes(Environment.ProcessId, nameof(ComplexObjectLogging)));
-
-        Log.DataFrameSent(logger, new DataFrame(nameof(Program).Length, byte.MinValue, int.MaxValue));
+        Log.DataFrameSent(logger, new DataFrame(nameof(Program).Length, byte.MinValue, short.MaxValue));
 
         // Here we log an enumerable:
         Log.DataFrameSent(logger, ["destination_1", "destination_2"]);

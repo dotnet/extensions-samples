@@ -27,6 +27,10 @@
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>c80574bf8b291be1a819b46df078aaa2594906c0</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.Extensions.Compliance.Abstractions" Version="8.4.0-preview.24158.7">
+      <Uri>https://github.com/dotnet/extensions</Uri>
+      <Sha>c80574bf8b291be1a819b46df078aaa2594906c0</Sha>
+    </Dependency>
     <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="8.4.0-preview.24158.7">
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>c80574bf8b291be1a819b46df078aaa2594906c0</Sha>
