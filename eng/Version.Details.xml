@@ -26,46 +26,46 @@
       <Sha>7f555e0834411c18450074c2218f3656251bca9c</Sha>
     </Dependency>
     <!-- dotnet/aspnetcore -->
-    <Dependency Name="Microsoft.AspNetCore.App.Runtime.win-x64" Version="9.0.0-preview.4.24178.2" CoherentParentDependency="Microsoft.Extensions.Compliance.Redaction">
+    <Dependency Name="Microsoft.AspNetCore.App.Runtime.win-x64" Version="9.0.0-preview.4.24179.2" CoherentParentDependency="Microsoft.Extensions.Compliance.Redaction">
       <Uri>https://github.com/dotnet/aspnetcore</Uri>
-      <Sha>2e291a30403ed17ee78e80535503591590269a47</Sha>
+      <Sha>6dfaf9e2cff6cfa3aab0b7842fe02fe9f71e0f60</Sha>
     </Dependency>
     <!-- dotnet/extensions -->
-    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.0.0-preview.3.24179.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.0.0-preview.3.24180.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>435afd947db15939797faab32d86c20cf97636b3</Sha>
+      <Sha>977756418e3b031438769c08408d1fa4a5981bed</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
