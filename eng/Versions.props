@@ -35,15 +35,15 @@
     <!-- dotnet/aspnetcore -->
     <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.0-preview.4.24179.2</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.0.0-preview.3.24180.1</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAuditReportsVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsAuditReportsVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsHttpDiagnosticsVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>9.0.0-preview.3.24180.1</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.0.0-preview.3.24201.1</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAuditReportsVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsAuditReportsVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>9.0.0-preview.3.24201.1</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 
