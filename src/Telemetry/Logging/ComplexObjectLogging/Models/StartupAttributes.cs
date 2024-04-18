@@ -3,4 +3,9 @@
 
 namespace ComplexObjectLogging.Models;
 
-internal sealed record class StartupAttributes(int ProcessId, string ApplicationName);
+internal sealed class StartupAttributes(string machineName, string applicationName)
+{
+    public string MachineName { get; } = machineName;
+
+    public string ApplicationName { get; } = applicationName;
+}
