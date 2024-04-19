@@ -2,6 +2,7 @@
 // The .NET Foundation licenses this file to you under the MIT license.
 
 using System.Threading.Tasks;
+using Metrics.Generators.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -12,7 +13,10 @@ internal static class Startup
     public static async Task Main(string[] args)
     {
         using var host = Host.CreateDefaultBuilder(args)
-            .ConfigureServices(services => services.AddHostedService<TelemetryEmitterBackgroundService>())
+            .ConfigureServices(services =>
+                services
+                    .AddHostedService<TelemetryEmitterBackgroundService>()
+                    .AddHostedService<MetricsReportCheckerService>())
             .Build();
 
         await host.RunAsync().ConfigureAwait(false);

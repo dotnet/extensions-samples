@@ -2,8 +2,8 @@
   <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
 
   <ItemGroup>
-    <Compile Include="..\Shared\Compliance\DataTaxonomy.cs" Link="Compliance\DataTaxonomy.cs" />
-    <Compile Include="..\Shared\Compliance\PrivateDataAttribute.cs" Link="Compliance\PrivateDataAttribute.cs" />
-    <Compile Include="..\Shared\Compliance\StarRedactor.cs" Link="Compliance\StarRedactor.cs" />
+    <Compile Include="..\..\..\Shared\Compliance\DataTaxonomy.cs" Link="Compliance\DataTaxonomy.cs" />
+    <Compile Include="..\..\..\Shared\Compliance\PrivateDataAttribute.cs" Link="Compliance\PrivateDataAttribute.cs" />
+    <Compile Include="..\..\..\Shared\Compliance\StarRedactor.cs" Link="Compliance\StarRedactor.cs" />
   </ItemGroup>
 </Project>

@@ -12,7 +12,7 @@ steps:
   #       Write-Host 'buildScript: ${{ parameters.buildScript }}'
   #       Write-Host 'buildConfig: ${{ parameters.buildConfig }}'
   #       Write-Host 'repoLogPath: ${{ parameters.repoLogPath }}'
-  #       Get-ChildItem env:* | Sort-Object Name  
+  #       Get-ChildItem env:* | Sort-Object Name
   #   displayName: Debug
 
   - ${{ if ne(variables['System.TeamProject'], 'public') }}:
