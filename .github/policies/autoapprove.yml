@@ -1,0 +1,55 @@
+name: Auto-approve pull-requests
+description: Auto-approve infrastructure pull-requests
+resource: repository
+
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+    - description: '[Infrastructure PRs] Add area-infrastructure label to SDK update Pull Requests'
+      if:
+        - payloadType: Pull_Request
+        - isAction:
+            action: Opened
+        - isActivitySender:
+            user: github-actions[bot]
+            issueAuthor: False
+        - titleContains:
+            pattern: Update .NET SDK
+            isRegex: False
+      then:
+        - addLabel:
+            label: area-infrastructure
+        - approvePullRequest:
+            comment: Auto-approving SDK update.
+    - description: '[Infrastructure PRs] Add area-infrastructure label to auto-merge Pull Requests'
+      if:
+        - payloadType: Pull_Request
+        - isAction:
+            action: Opened
+        - isActivitySender:
+            user: dotnet-maestro-bot
+            issueAuthor: False
+        - titleContains:
+            pattern: Merge branch
+            isRegex: False
+      then:
+        - addLabel:
+            label: area-infrastructure
+        - approvePullRequest:
+            comment: Auto-approving branch merge.
+    - description: '[Infrastructure PRs] Add area-infrastructure label to dependency update Pull Requests'
+      if:
+        - payloadType: Pull_Request
+        - isAction:
+            action: Opened
+        - isActivitySender:
+            user: dotnet-maestro[bot]
+            issueAuthor: False
+        - titleContains:
+            pattern: Update dependencies
+            isRegex: False
+      then:
+        - addLabel:
+            label: area-infrastructure
+        - approvePullRequest:
+            comment: Auto-approving dependency update.
