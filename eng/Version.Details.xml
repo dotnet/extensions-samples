@@ -31,45 +31,45 @@
       <Sha>94ad1d4e3edfe952f4621c47b4445d463b2e7042</Sha>
     </Dependency>
     <!-- dotnet/extensions -->
-    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Abstractions" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Abstractions" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.0.0-preview.5.24270.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.0.0-preview.5.24270.2">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>583b58004687a971a7b639d3d00d9ac16566a101</Sha>
+      <Sha>2efa61bf2754911ff24f4bdcde6d89715423b5cc</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
