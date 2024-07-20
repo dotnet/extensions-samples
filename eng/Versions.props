@@ -33,16 +33,16 @@
     <MicrosoftExtensionsLoggingConsoleVersion>8.0.0</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.8.0-preview.24359.8</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAuditReportsVersion>8.8.0-preview.24359.8</MicrosoftExtensionsAuditReportsVersion>
-    <MicrosoftExtensionsComplianceAbstractionsVersion>8.8.0-preview.24359.8</MicrosoftExtensionsComplianceAbstractionsVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>8.8.0-preview.24359.8</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>8.8.0-preview.24359.8</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.8.0-preview.24359.8</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>8.8.0-preview.24359.8</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>8.8.0-preview.24359.8</MicrosoftExtensionsHttpDiagnosticsVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.8.0-preview.24359.8</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>8.8.0-preview.24359.8</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.8.0-preview.24369.2</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAuditReportsVersion>8.8.0-preview.24369.2</MicrosoftExtensionsAuditReportsVersion>
+    <MicrosoftExtensionsComplianceAbstractionsVersion>8.8.0-preview.24369.2</MicrosoftExtensionsComplianceAbstractionsVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.8.0-preview.24369.2</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>8.8.0-preview.24369.2</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.8.0-preview.24369.2</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>8.8.0-preview.24369.2</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>8.8.0-preview.24369.2</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.8.0-preview.24369.2</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>8.8.0-preview.24369.2</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 
