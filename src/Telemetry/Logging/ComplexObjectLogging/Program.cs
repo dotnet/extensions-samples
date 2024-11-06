@@ -53,5 +53,8 @@ internal static class Program
 
         // Logging sensitive data with redaction:
         Log.UserIdAvailabilityChanged(logger, "John Doe", new UserAvailability("SensitiveUsername", "Online"));
+
+        // Logging properties transitively:
+        Log.UserLoggedIn(logger, new User("abcd", "John Doe", "john.doe@contoso.com", new InnerUserData()));
     }
 }

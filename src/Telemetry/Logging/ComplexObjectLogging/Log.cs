@@ -35,4 +35,13 @@ internal static partial class Log
         ILogger logger,
         [PrivateData] string name,
         [LogProperties] UserAvailability availability);
+
+    // This method shows how to enable transitive redaction in complex objects.
+    // Please inspect User type to see how it is implemented and what gets logged.
+    [LoggerMessage(LogLevel.Information, "User logged in")]
+#pragma warning disable EXTEXP0003 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+    public static partial void UserLoggedIn(
+        ILogger logger,
+        [LogProperties(Transitive = true)] User user);
+#pragma warning restore EXTEXP0003 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 }
