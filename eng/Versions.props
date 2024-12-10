@@ -26,10 +26,10 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/runtime -->
-    <MicrosoftBclTimeProviderVersion>8.0.0</MicrosoftBclTimeProviderVersion>
-    <MicrosoftExtensionsDiagnosticsVersion>8.0.0</MicrosoftExtensionsDiagnosticsVersion>
-    <MicrosoftExtensionsHostingVersion>8.0.0</MicrosoftExtensionsHostingVersion>
-    <MicrosoftExtensionsLoggingConsoleVersion>8.0.0</MicrosoftExtensionsLoggingConsoleVersion>
+    <MicrosoftBclTimeProviderVersion>9.0.0</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsDiagnosticsVersion>9.0.0</MicrosoftExtensionsDiagnosticsVersion>
+    <MicrosoftExtensionsHostingVersion>9.0.0</MicrosoftExtensionsHostingVersion>
+    <MicrosoftExtensionsLoggingConsoleVersion>9.0.0</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
     <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.1.0-preview.1.24609.1</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
