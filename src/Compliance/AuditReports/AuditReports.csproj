@@ -18,6 +18,7 @@
     <PackageReference Include="Microsoft.Extensions.Compliance.Abstractions" Version="$(MicrosoftExtensionsComplianceAbstractionsVersion)" />
     <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
     <PackageReference Include="Microsoft.Extensions.AuditReports" Version="$(MicrosoftExtensionsAuditReportsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="$(MicrosoftExtensionsObjectPoolVersion)" />
   </ItemGroup>
 
   <ItemGroup>
