@@ -21,6 +21,7 @@
     <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
     <!-- This package should be referenced for metrics report generator -->
     <PackageReference Include="Microsoft.Extensions.AuditReports" Version="$(MicrosoftExtensionsAuditReportsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="$(MicrosoftExtensionsObjectPoolVersion)" />
   </ItemGroup>
 
 </Project>

@@ -1,23 +1,27 @@
 <Dependencies>
   <ProductDependencies>
     <!-- dotnet/runtime -->
-    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="9.0.0" CoherentParentDependency="Microsoft.Extensions.AuditReports">
+    <Dependency Name="Microsoft.Bcl.TimeProvider" Version="9.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Hosting" Version="9.0.0" CoherentParentDependency="Microsoft.Extensions.AuditReports">
+    <Dependency Name="Microsoft.Extensions.Hosting" Version="9.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics" Version="9.0.0" CoherentParentDependency="Microsoft.Extensions.AuditReports">
+    <Dependency Name="Microsoft.Extensions.Diagnostics" Version="9.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Logging.Console" Version="9.0.0" CoherentParentDependency="Microsoft.Extensions.AuditReports">
+    <Dependency Name="Microsoft.Extensions.Logging.Console" Version="9.0.0">
       <Uri>https://github.com/dotnet/runtime</Uri>
       <Sha>488a8a3521610422e8fbe22d5cc66127f3dce3dc</Sha>
     </Dependency>
     <!-- dotnet/aspnetcore -->
+    <Dependency Name="Microsoft.Extensions.ObjectPool" Version="9.0.0">
+      <Uri>https://github.com/dotnet/aspnetcore</Uri>
+      <Sha>af22effae4069a5dfb9b0735859de48820104f5b</Sha>
+    </Dependency>
     <!-- dotnet/extensions -->
     <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.1.0-preview.1.24609.1">
       <Uri>https://github.com/dotnet/extensions</Uri>
