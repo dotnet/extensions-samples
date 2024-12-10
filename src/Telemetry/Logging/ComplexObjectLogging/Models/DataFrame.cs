@@ -3,7 +3,11 @@
 
 namespace ComplexObjectLogging.Models;
 
-internal readonly record struct DataFrame(
-    int PayloadLength,
-    byte Type,
-    int StreamId);
+internal readonly struct DataFrame(int payloadLength, byte type, int streamId)
+{
+    public int PayloadLength { get; } = payloadLength;
+
+    public byte Type { get; } = type;
+
+    public int StreamId { get; } = streamId;
+}

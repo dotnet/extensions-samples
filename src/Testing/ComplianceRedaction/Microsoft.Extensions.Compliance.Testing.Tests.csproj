@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Bcl.TimeProvider" Version="$(MicrosoftBclTimeProviderVersion)" />
     <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="$(MicrosoftExtensionsComplianceRedactionVersion)" />
     <PackageReference Include="Microsoft.Extensions.Compliance.Testing" Version="$(MicrosoftExtensionsComplianceTestingVersion)" />
     <PackageReference Include="Microsoft.Extensions.Diagnostics.Testing" Version="$(MicrosoftExtensionsDiagnosticsTestingVersion)" />

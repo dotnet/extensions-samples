@@ -21,7 +21,7 @@ internal static partial class Log
     [LoggerMessage(Level = LogLevel.Information, Message = "Data frame was sent")]
     public static partial void DataFrameSent(
         ILogger logger,
-        [TagProvider(typeof(DataFrameTagProvider), nameof(DataFrameTagProvider.Provide), OmitReferenceName = true)] DataFrame dataFrame);
+        [TagProvider(typeof(DataFrameTagProvider), nameof(DataFrameTagProvider.Provide), OmitReferenceName = true)] in DataFrame dataFrame);
 
     // This overload shows how to log an enumerable:
     // Please note that "ILogger" parameter is nullable, the generated implementation won't throw if it is null.
@@ -35,4 +35,13 @@ internal static partial class Log
         ILogger logger,
         [PrivateData] string name,
         [LogProperties] UserAvailability availability);
+
+    // This method shows how to enable transitive redaction in complex objects.
+    // Please inspect User type to see how it is implemented and what gets logged.
+    [LoggerMessage(LogLevel.Information, "User logged in")]
+#pragma warning disable EXTEXP0003 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+    public static partial void UserLoggedIn(
+        ILogger logger,
+        [LogProperties(Transitive = true)] User user);
+#pragma warning restore EXTEXP0003 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 }

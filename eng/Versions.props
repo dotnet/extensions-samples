@@ -28,18 +28,21 @@
   <PropertyGroup Label="Automated">
     <!-- dotnet/runtime -->
     <MicrosoftBclTimeProviderVersion>8.0.0</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsDiagnosticsVersion>8.0.0</MicrosoftExtensionsDiagnosticsVersion>
     <MicrosoftExtensionsHostingVersion>8.0.0</MicrosoftExtensionsHostingVersion>
     <MicrosoftExtensionsLoggingConsoleVersion>8.0.0</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.0.0</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>8.0.0</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>8.0.0</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.0.0</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>8.0.0</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.0.0</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>8.0.0</MicrosoftExtensionsTelemetryVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>8.0.0</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>8.10.0-preview.24501.2</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAuditReportsVersion>8.10.0-preview.24501.2</MicrosoftExtensionsAuditReportsVersion>
+    <MicrosoftExtensionsComplianceAbstractionsVersion>8.10.0-preview.24501.2</MicrosoftExtensionsComplianceAbstractionsVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>8.10.0-preview.24501.2</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>8.10.0-preview.24501.2</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>8.10.0-preview.24501.2</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>8.10.0-preview.24501.2</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>8.10.0-preview.24501.2</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>8.10.0-preview.24501.2</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>8.10.0-preview.24501.2</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 

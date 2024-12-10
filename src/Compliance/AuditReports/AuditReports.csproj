@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to leverage AuditReports feature.</Description>
+    <OutputType>Exe</OutputType>
+
+    <!-- This property is used to control whether compliance report generator kicks in -->
+    <!--<GenerateComplianceReport>true</GenerateComplianceReport>-->
+
+    <!--
+        Optionally you can control where the "ComplianceReport.json" file should be created.
+        If this value is changed, make sure to make a corresponding change in Program.cs.
+     -->
+    <!--<ComplianceReportOutputPath>$(ProjectDir)$(OutputPath)</ComplianceReportOutputPath>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Compliance.Abstractions" Version="$(MicrosoftExtensionsComplianceAbstractionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.AuditReports" Version="$(MicrosoftExtensionsAuditReportsVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Shared\Compliance\DataTaxonomy.cs" Link="Compliance\DataTaxonomy.cs" />
+    <Compile Include="..\..\Shared\Compliance\PrivateDataAttribute.cs" Link="Compliance\PrivateDataAttribute.cs" />
+  </ItemGroup>
+
+</Project>

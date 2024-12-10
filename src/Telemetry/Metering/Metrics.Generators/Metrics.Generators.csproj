@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Demonstrates how to emit application metrics.</Description>
+    <OutputType>Exe</OutputType>
+
+    <!-- This property is used to control whether metrics report generator kicks in -->
+    <!--<GenerateMetricsReport>true</GenerateMetricsReport>-->
+
+    <!--
+        Optionally you can control where the "MetricsReport.json" file should be created.
+        If this value is changed, make sure to make a corresponding change in MetricsReportCheckerService.cs.
+     -->
+    <!--<MetricsReportOutputPath>$(ProjectDir)$(OutputPath)</MetricsReportOutputPath>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics" Version="$(MicrosoftExtensionsDiagnosticsVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="$(MicrosoftExtensionsHostingVersion)" />
+    <!-- This package should be referenced for metrics code generator -->
+    <PackageReference Include="Microsoft.Extensions.Telemetry.Abstractions" Version="$(MicrosoftExtensionsTelemetryAbstractionsVersion)" />
+    <!-- This package should be referenced for metrics report generator -->
+    <PackageReference Include="Microsoft.Extensions.AuditReports" Version="$(MicrosoftExtensionsAuditReportsVersion)" />
+  </ItemGroup>
+
+</Project>

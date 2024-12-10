@@ -9,23 +9,20 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Compliance.Redaction;
-using System.Net.Mime;
 using Shared.Compliance;
 
 var builder = Host.CreateApplicationBuilder(args);
 
 // We add JSON console logging to see all tags in the log output:
 builder.Logging.AddJsonConsole(x =>
-{
-    x.JsonWriterOptions = new() { Indented = true };
-});
+    x.JsonWriterOptions = new() { Indented = true });
 
 // We need to register a redactor that will handle all sensitive data.
 // Here for the sake of showing redaction functionality we use "StarRedactor" and "NullRedactor" redactors.
 // In a real world scenario you would use the one that suits your needs (e.g. HMAC redactor).
 builder.Services.AddRedaction(x =>
 {
-    // We don't redact any values that aren't sensitive:
+    // We don't redact values that aren't sensitive:
     x.SetRedactor<NullRedactor>(DataTaxonomy.PublicData);
 
     // All sensitive data gets replaced with asterisks:
@@ -42,13 +39,22 @@ var httpClientBuilder = builder.Services.AddHttpClient("MyNamedClient");
 // We add the logging to the named HttpClient and configure it via action:
 httpClientBuilder.AddExtendedHttpClientLogging(options =>
 {
-    options.RouteParameterDataClasses.Add("userId", DataTaxonomy.PrivateData);
+    // In Formatted mode all request path parameters are logged as part of HTTP URL path.
+    // If you use Structured mode they will be logged as separate tags and the HTTP URL will contain the HTTP request route.
     options.RequestPathLoggingMode = OutgoingPathLoggingMode.Formatted;
+    options.RouteParameterDataClasses.Add("userId", DataTaxonomy.PrivateData);
     options.RequestPathParameterRedactionMode = HttpRouteParameterRedactionMode.Loose;
 
     // We can also configure the logging for specific request and response headers:
     options.RequestHeadersDataClasses.Add("Accept", DataTaxonomy.PublicData);
     options.ResponseHeadersDataClasses.Add("Server", DataTaxonomy.PublicData);
+
+    // If you want to log content headers, you need to enable the corresponding option.
+    // The API is experimental, thus you need to explicitly acknowledge that.
+#pragma warning disable EXTEXP0003
+    options.LogContentHeaders = true;
+    options.ResponseHeadersDataClasses.Add("Content-Length", DataTaxonomy.PublicData);
+#pragma warning restore EXTEXP0003
 });
 
 // We can also add a custom log enricher to augment all HttpClient logs:
@@ -73,7 +79,7 @@ using (var httpClient = httpClientFactory.CreateClient("MyNamedClient"))
 static async Task SendRequestAsync(HttpClient httpClient)
 {
     using var requestMessage = new HttpRequestMessage(HttpMethod.Get, "https://api.github.com/users/aspnet/repos");
-    requestMessage.Headers.Accept.Add(new(MediaTypeNames.Application.Json));
+    requestMessage.Headers.Accept.Add(new("application/json"));
     requestMessage.Headers.UserAgent.Add(new("HttpClientLoggingSample", productVersion: null));
 
     var requestMetadata = new RequestMetadata()
