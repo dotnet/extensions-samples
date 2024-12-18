@@ -31,7 +31,6 @@
     <MicrosoftExtensionsHostingVersion>9.0.0</MicrosoftExtensionsHostingVersion>
     <MicrosoftExtensionsLoggingConsoleVersion>9.0.0</MicrosoftExtensionsLoggingConsoleVersion>
     <!-- dotnet/aspnetcore -->
-    <MicrosoftExtensionsObjectPoolVersion>9.0.0</MicrosoftExtensionsObjectPoolVersion>
     <!-- dotnet/extensions -->
     <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>9.1.0-preview.1.24611.2</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
     <MicrosoftExtensionsAuditReportsVersion>9.1.0-preview.1.24611.2</MicrosoftExtensionsAuditReportsVersion>

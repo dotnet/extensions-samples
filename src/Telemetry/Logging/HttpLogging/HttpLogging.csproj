@@ -9,7 +9,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.Middleware" Version="$(MicrosoftAspNetCoreDiagnosticsMiddlewareVersion)" />
     <PackageReference Include="Microsoft.Extensions.Compliance.Redaction" Version="$(MicrosoftExtensionsComplianceRedactionVersion)" />
-    <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="$(MicrosoftExtensionsObjectPoolVersion)" />
   </ItemGroup>
 
 </Project>
