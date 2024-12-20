@@ -7,10 +7,12 @@
     "runtimes": {
       "dotnet/x64": [
         "8.0.0",
+        "9.0.0",
         "$(MicrosoftNETCoreAppRuntimewinx64Version)"
       ],
       "aspnetcore/x64": [
         "8.0.0",
+        "9.0.0",
         "$(MicrosoftAspNetCoreAppRuntimewinx64Version)"
       ]
     }
