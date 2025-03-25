@@ -55,6 +55,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compliance", "Compliance", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuditReports", "src\Compliance\AuditReports\AuditReports.csproj", "{9B5FB8C7-27BA-4397-B4B8-DD0B0D525CB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogSampling", "src\Telemetry\Logging\LogSampling\LogSampling.csproj", "{1A8652E7-EA1D-49AF-98B3-56D655F759B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{9B5FB8C7-27BA-4397-B4B8-DD0B0D525CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B5FB8C7-27BA-4397-B4B8-DD0B0D525CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B5FB8C7-27BA-4397-B4B8-DD0B0D525CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8652E7-EA1D-49AF-98B3-56D655F759B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8652E7-EA1D-49AF-98B3-56D655F759B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8652E7-EA1D-49AF-98B3-56D655F759B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8652E7-EA1D-49AF-98B3-56D655F759B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{931A6585-1085-4185-AE12-78BBA87F2A73} = {175F98E5-AFE8-4978-A512-EB84AD660208}
 		{C42F13CB-E8D9-4A37-BFCC-A50458509D69} = {301296EC-54FF-4ADC-B2D1-281E0C7F2867}
 		{9B5FB8C7-27BA-4397-B4B8-DD0B0D525CB2} = {C42F13CB-E8D9-4A37-BFCC-A50458509D69}
+		{1A8652E7-EA1D-49AF-98B3-56D655F759B6} = {248CB37C-2412-4231-96C0-092413C10D4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6083D400-BF26-4ACE-86A8-778D26A8FA6A}
