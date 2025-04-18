@@ -38,6 +38,7 @@
     <MicrosoftExtensionsComplianceRedactionVersion>9.5.0-preview.1.25217.3</MicrosoftExtensionsComplianceRedactionVersion>
     <MicrosoftExtensionsComplianceTestingVersion>9.5.0-preview.1.25217.3</MicrosoftExtensionsComplianceTestingVersion>
     <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>9.5.0-preview.1.25217.3</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsResourceMonitoringVersion>9.5.0-preview.1.25217.3</MicrosoftExtensionsDiagnosticsResourceMonitoringVersion>
     <MicrosoftExtensionsDiagnosticsTestingVersion>9.5.0-preview.1.25217.3</MicrosoftExtensionsDiagnosticsTestingVersion>
     <MicrosoftExtensionsHttpDiagnosticsVersion>9.5.0-preview.1.25217.3</MicrosoftExtensionsHttpDiagnosticsVersion>
     <MicrosoftExtensionsTelemetryAbstractionsVersion>9.5.0-preview.1.25217.3</MicrosoftExtensionsTelemetryAbstractionsVersion>
