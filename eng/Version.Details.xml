@@ -43,6 +43,10 @@
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>805dd0564f9d30093a1968b3b7a3bf2690fc1505</Sha>
     </Dependency>
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ResourceMonitoring" Version="9.5.0-preview.1.25229.4">
+      <Uri>https://github.com/dotnet/extensions</Uri>
+      <Sha>805dd0564f9d30093a1968b3b7a3bf2690fc1505</Sha>
+    </Dependency>
     <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.5.0-preview.1.25229.4">
       <Uri>https://github.com/dotnet/extensions</Uri>
       <Sha>805dd0564f9d30093a1968b3b7a3bf2690fc1505</Sha>
