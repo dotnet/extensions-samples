@@ -8,9 +8,8 @@ namespace LogSampling;
 internal static partial class Log
 {
     [LoggerMessage(Level = LogLevel.Error, Message = "ERROR log message in my application.")]
-    public static partial void ErrorMessage(ILogger logger);
+    public static partial void ErrorMessage(this ILogger logger);
 
     [LoggerMessage(Level = LogLevel.Information, Message = "INFORMATION log message in my application.")]
-    public static partial void InformationMessage(ILogger logger);
-
+    public static partial void InformationMessage(this ILogger logger);
 }
