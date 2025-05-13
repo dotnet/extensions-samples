@@ -1,9 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Demonstrates how to use log sampling feature.</Description>
+    <Description>Demonstrates how to use log buffering feature.</Description>
     <OutputType>Exe</OutputType>
     <NoWarn>$(NoWarn);EXTEXP0003</NoWarn>
+    <TargetFrameworks>$(LatestTargetFramework)</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
