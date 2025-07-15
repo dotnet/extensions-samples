@@ -19,49 +19,49 @@
     </Dependency>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
-    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Abstractions" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Abstractions" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ResourceMonitoring" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ResourceMonitoring" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.8.0-preview.1.25361.1">
+    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.8.0-preview.1.25364.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>cc0d010d068ddab0c5951b6cfc5793d379c0532c</Sha>
+      <Sha>fcd0c18196dc55978f9b807a644df7dd9616ed12</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
