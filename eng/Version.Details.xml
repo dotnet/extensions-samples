@@ -19,49 +19,49 @@
     </Dependency>
     <!-- dotnet/aspnetcore -->
     <!-- dotnet/extensions -->
-    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.7.1">
+    <Dependency Name="Microsoft.AspNetCore.Diagnostics.Middleware" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.AuditReports" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Abstractions" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Abstractions" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Redaction" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Compliance.Testing" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ExceptionSummarization" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.ResourceMonitoring" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.ResourceMonitoring" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Diagnostics.Testing" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry.Abstractions" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Telemetry" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
-    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.7.1">
+    <Dependency Name="Microsoft.Extensions.Http.Diagnostics" Version="9.8.0-preview.1.25366.3">
       <Uri>https://github.com/dotnet/extensions</Uri>
-      <Sha>88c87c0930af11896c35a92583193d573e9b81d2</Sha>
+      <Sha>73b4861518efd50a6da10d8141b86c9467736ca5</Sha>
     </Dependency>
   </ProductDependencies>
   <ToolsetDependencies>
