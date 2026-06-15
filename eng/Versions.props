@@ -26,24 +26,24 @@
   -->
   <PropertyGroup Label="Automated">
     <!-- dotnet/runtime -->
-    <MicrosoftBclTimeProviderVersion>9.0.15</MicrosoftBclTimeProviderVersion>
-    <MicrosoftExtensionsHostingVersion>9.0.15</MicrosoftExtensionsHostingVersion>
-    <MicrosoftExtensionsDiagnosticsVersion>9.0.15</MicrosoftExtensionsDiagnosticsVersion>
-    <MicrosoftExtensionsLoggingConsoleVersion>9.0.15</MicrosoftExtensionsLoggingConsoleVersion>
-    <MicrosoftNETCoreAppRuntimewinx64Version>9.0.15</MicrosoftNETCoreAppRuntimewinx64Version>
+    <MicrosoftBclTimeProviderVersion>9.0.17</MicrosoftBclTimeProviderVersion>
+    <MicrosoftExtensionsHostingVersion>9.0.17</MicrosoftExtensionsHostingVersion>
+    <MicrosoftExtensionsDiagnosticsVersion>9.0.17</MicrosoftExtensionsDiagnosticsVersion>
+    <MicrosoftExtensionsLoggingConsoleVersion>9.0.17</MicrosoftExtensionsLoggingConsoleVersion>
+    <MicrosoftNETCoreAppRuntimewinx64Version>9.0.17</MicrosoftNETCoreAppRuntimewinx64Version>
     <!-- dotnet/aspnetcore -->
-    <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.15</MicrosoftAspNetCoreAppRuntimewinx64Version>
+    <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.17</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>10.7.0-preview.1.26272.1</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAuditReportsVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsAuditReportsVersion>
-    <MicrosoftExtensionsComplianceAbstractionsVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsComplianceAbstractionsVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsHttpDiagnosticsVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>10.7.0-preview.1.26272.1</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>10.7.0-preview.1.26309.7</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAuditReportsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsAuditReportsVersion>
+    <MicrosoftExtensionsComplianceAbstractionsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsComplianceAbstractionsVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 
