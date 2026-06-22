@@ -34,16 +34,16 @@
     <!-- dotnet/aspnetcore -->
     <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.17</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>10.7.0-preview.1.26309.7</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAuditReportsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsAuditReportsVersion>
-    <MicrosoftExtensionsComplianceAbstractionsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsComplianceAbstractionsVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsHttpDiagnosticsVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>10.7.0-preview.1.26309.7</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>10.7.0</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAuditReportsVersion>10.7.0</MicrosoftExtensionsAuditReportsVersion>
+    <MicrosoftExtensionsComplianceAbstractionsVersion>10.7.0</MicrosoftExtensionsComplianceAbstractionsVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>10.7.0</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>10.7.0</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>10.7.0</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>10.7.0</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>10.7.0</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>10.7.0</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>10.7.0</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 
