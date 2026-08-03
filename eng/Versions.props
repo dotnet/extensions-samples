@@ -34,16 +34,16 @@
     <!-- dotnet/aspnetcore -->
     <MicrosoftAspNetCoreAppRuntimewinx64Version>9.0.18</MicrosoftAspNetCoreAppRuntimewinx64Version>
     <!-- dotnet/extensions -->
-    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>10.8.2</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
-    <MicrosoftExtensionsAuditReportsVersion>10.8.2</MicrosoftExtensionsAuditReportsVersion>
-    <MicrosoftExtensionsComplianceAbstractionsVersion>10.8.2</MicrosoftExtensionsComplianceAbstractionsVersion>
-    <MicrosoftExtensionsComplianceRedactionVersion>10.8.2</MicrosoftExtensionsComplianceRedactionVersion>
-    <MicrosoftExtensionsComplianceTestingVersion>10.8.2</MicrosoftExtensionsComplianceTestingVersion>
-    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>10.8.2</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
-    <MicrosoftExtensionsDiagnosticsTestingVersion>10.8.2</MicrosoftExtensionsDiagnosticsTestingVersion>
-    <MicrosoftExtensionsHttpDiagnosticsVersion>10.8.2</MicrosoftExtensionsHttpDiagnosticsVersion>
-    <MicrosoftExtensionsTelemetryAbstractionsVersion>10.8.2</MicrosoftExtensionsTelemetryAbstractionsVersion>
-    <MicrosoftExtensionsTelemetryVersion>10.8.2</MicrosoftExtensionsTelemetryVersion>
+    <MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>10.8.3</MicrosoftAspNetCoreDiagnosticsMiddlewareVersion>
+    <MicrosoftExtensionsAuditReportsVersion>10.8.3</MicrosoftExtensionsAuditReportsVersion>
+    <MicrosoftExtensionsComplianceAbstractionsVersion>10.8.3</MicrosoftExtensionsComplianceAbstractionsVersion>
+    <MicrosoftExtensionsComplianceRedactionVersion>10.8.3</MicrosoftExtensionsComplianceRedactionVersion>
+    <MicrosoftExtensionsComplianceTestingVersion>10.8.3</MicrosoftExtensionsComplianceTestingVersion>
+    <MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>10.8.3</MicrosoftExtensionsDiagnosticsExceptionSummarizationVersion>
+    <MicrosoftExtensionsDiagnosticsTestingVersion>10.8.3</MicrosoftExtensionsDiagnosticsTestingVersion>
+    <MicrosoftExtensionsHttpDiagnosticsVersion>10.8.3</MicrosoftExtensionsHttpDiagnosticsVersion>
+    <MicrosoftExtensionsTelemetryAbstractionsVersion>10.8.3</MicrosoftExtensionsTelemetryAbstractionsVersion>
+    <MicrosoftExtensionsTelemetryVersion>10.8.3</MicrosoftExtensionsTelemetryVersion>
   </PropertyGroup>
   <!--
 
